@@ -1,0 +1,13 @@
+# Regras do projeto
+- Interface e documentação em português brasileiro.
+- HTML, CSS e módulos JavaScript nativos, sem backend obrigatório.
+- Use o checkout existente: tarefas na nuvem já são isoladas. Não crie worktrees sem pedido explícito.
+- Preserve IDs permanentes e associações muitos-para-muitos; não copie assuntos por concurso.
+- Nunca invente conteúdos oficiais, classificações ou resultados do estudante.
+- Não inclua respostas corretas, soluções, gabaritos ou cálculo automático de respostas.
+- Dados pessoais, anexos e histórico ficam no IndexedDB. Não os versione nem publique.
+- Tentativas e eventos são acrescentados; não sobrescreva tentativas antigas.
+- Preserve classificações originais. Conteúdo real exige fonte e revisão.
+- Use caminhos relativos para GitHub Pages. Sem tokens no cliente.
+- Execute `npm test` e, quando disponível, `python3 tests/browser_test.py` com servidor na porta 8000.
+- Não faça merge automático em main. Publicação e alterações remotas devem respeitar o pedido do usuário.
