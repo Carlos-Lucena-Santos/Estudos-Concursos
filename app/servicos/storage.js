@@ -1,0 +1,4 @@
+import {validate,initial} from './model.js';
+const db=new Promise((resolve,reject)=>{const r=indexedDB.open('estudos-concursos',1);r.onupgradeneeded=()=>r.result.createObjectStore('state');r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error);});
+export async function load(){const d=await db;return new Promise((resolve,reject)=>{const r=d.transaction('state').objectStore('state').get('personal');r.onsuccess=()=>resolve(r.result?validate(r.result):initial());r.onerror=()=>reject(r.error);});}
+export async function save(s){validate(s);const d=await db;return new Promise((resolve,reject)=>{const t=d.transaction('state','readwrite');t.objectStore('state').put(s,'personal');t.oncomplete=resolve;t.onerror=()=>reject(t.error);t.onabort=()=>reject(t.error||Error('Falha ao gravar dados.'));});}
