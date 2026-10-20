@@ -1,4 +1,4 @@
-# Estudos-Concursos • V0.1
+# Estudos-Concursos • V0.2
 Plataforma pessoal gratuita para organizar estudos, com JavaScript nativo, sem serviços externos ou backend obrigatório.
 
 ## Executar
@@ -14,13 +14,13 @@ Abra o endereço local mostrado pelo servidor no seu navegador. Não abra index.
 
 ## Usar
 1. Cadastre concursos e disciplinas, depois assuntos e subassuntos com seus vínculos.
-2. Importe questões em **Backup e importação**, seguindo docs/MODELO_DADOS.md.
+2. Consulte as 180 questões IFRS já disponíveis em **Questões** e os 31 tópicos em **Assuntos**. A frequência por grupo acompanha os filtros. Novos catálogos podem ser mesclados em **Backup e importação**.
 3. Navegue pelo catálogo e seus filtros; registre tentativas no diário.
 4. Crie anotações Markdown por assunto, edite ou exclua, e guarde documentos locais no caderno.
 5. Registre atividades e revisões manuais no histórico.
 6. Exporte backups JSON e cadernos Markdown regularmente.
 
-A demonstração é opcional e fica em um concurso fictício separado. O IFRS Porto Alegre / Tecnologia em Sistemas para Internet / 2027/1 e o edital 15/2026 são metadados fornecidos pelo solicitante: os documentos oficiais e as 180 questões não estão presentes nem foram importados.
+A demonstração é opcional e fica em um concurso fictício separado. O IFRS Porto Alegre / Tecnologia em Sistemas para Internet / 2027/1 e o edital 15/2026 são metadados fornecidos pelo solicitante: foram incorporadas as 180 classificações e os 31 tópicos dos anexos fornecidos. Os PDFs das provas e do edital não estão incluídos. As classificações permanecem preliminares (166) ou com revisão necessária (14), sem reclassificação.
 
 ## Privacidade
 Os dados pessoais e anexos ficam no IndexedDB deste navegador e desta origem. Não são enviados ao GitHub nem sincronizados. Limpeza do navegador, mudança de endereço ou de dispositivo pode tornar os dados indisponíveis. Backups contêm informações privadas: guarde-os em local seguro. O armazenamento está sujeito à cota do navegador; anexos limitados a 10 MB por arquivo. PDFs só são abertos por link fornecido ou arquivo selecionado pelo usuário. Nenhuma prova é publicada automaticamente.
@@ -39,3 +39,8 @@ O teste de navegador requer o pacote Python Playwright e Chromium instalado (`pi
 - [Roadmap e limitações](docs/ROADMAP.md)
 - [Publicação no GitHub Pages](docs/PUBLICACAO.md)
 - [Validação](docs/VALIDACAO.md)
+
+## Dados IFRS da V0.2
+O JSON em `dados/fontes/` é a fonte principal; CSV e XLSX foram conferidos e preservados para rastreabilidade. A carga inicial mescla apenas IDs ausentes em memória; uma gravação normal mantém o catálogo junto ao backup, sem substituir registros locais existentes. Reimportar os anexos JSON/CSV não duplica questões. Os 31 tópicos oficiais e os temas específicos da classificação são exibidos separadamente: não foram inferidos vínculos entre um tema e um tópico oficial.
+
+Conferência dos três arquivos: `python3 scripts/conferir_ifrs.py` (requer openpyxl, apenas ferramenta de conferência). Teste adicional de migração: `python3 tests/ifrs_browser_test.py`.
