@@ -16,5 +16,7 @@ As 180 classificações, os 31 tópicos e as funcionalidades anteriores foram pr
 ## V0.1 — base funcional
 Aplicação estática com navegação, biblioteca compartilhada, catálogo, caderno Markdown, diário de tentativas, histórico, dashboard, armazenamento local IndexedDB e exportação/importação de backups. [PR #1](https://github.com/Carlos-Lucena-Santos/Estudos-Concursos/pull/1).
 
-## V0.4 — em planejamento, sem implementação
-Pendências candidatas: outras 17 provas e classificação temática detalhada. O escopo e os critérios de aceite serão definidos antes de iniciar desenvolvimento; ver [PLANEJAMENTO_V0.4.md](PLANEJAMENTO_V0.4.md).
+## V0.4 — implementação para revisão
+Estrutura `assuntoIds` com múltiplos vínculos confirmados por questão, editor manual e painel de frequência pelos 31 assuntos oficiais existentes, com consulta, percentuais, zeros e pendências. Nenhuma associação automática por nomes: a base inicial possui zero questões confirmadas e 180 pendentes. Classificações originais, dados pessoais, PDF e imagens da V0.3 preservados. Sem novos assuntos ou processamento das demais provas.
+
+Branch `feature/estudos-concursos-v0.4`; merge, publicação e validação em produção permanecem pendentes. Ver [V0.4_TEMATICA.md](V0.4_TEMATICA.md). As outras 17 provas e a revisão temática humana continuam pendências futuras.

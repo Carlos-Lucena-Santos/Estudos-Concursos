@@ -26,9 +26,9 @@ test('migração aditiva preserva todas as coleções pessoais e conflitos de ID
  const before=structuredClone(personal);const next=applyCatalog(personal,catalog);
  assert.deepEqual(personal,before);for(const c of ['notes','attempts','events','attachments'])assert.deepEqual(next[c],before[c]);assert.equal(next.contests[0].name,'Meu concurso');assert.equal(next.subjects[0].status,'concluído');assert.equal(next.questions[0].pdfUrl,'https://example.org/prova.pdf');assert.deepEqual(applyCatalog(next,catalog),next);
 });
-test('frequências fecham em 180 e respeitam filtros',()=>{
- const counts=subjectFrequency(catalog);assert.equal(counts.reduce((a,b)=>a+b.count,0),180);assert.equal(counts.find(x=>x.name==='Funções').count,36);
- assert.equal(subjectFrequency(catalog,{year:'2016',semester:'1'}).reduce((a,b)=>a+b.count,0),10);
+test('frequência usa 31 assuntos e não confirma temas preliminares automaticamente',()=>{
+ const counts=subjectFrequency(catalog);assert.equal(counts.length,31);assert.equal(counts.reduce((a,b)=>a+b.count,0),0);assert.ok(counts.every(x=>x.total===180&&x.pending===180));
+ const filtered=subjectFrequency(catalog,{year:'2016',semester:'1'});assert.ok(filtered.every(x=>x.total===10&&x.pending===10));
 });
 test('CSV fornecido corresponde integralmente ao JSON e não separa vírgulas de assuntos',()=>{
  const rows=parseCSV(readFileSync(new URL('../dados/fontes/IFRS_Matematica_Questoes_2016_2026.csv',import.meta.url),'utf8'));
