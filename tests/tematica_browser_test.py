@@ -42,11 +42,15 @@ try:
             return page.evaluate('''()=>new Promise(resolve=>{const r=indexedDB.open('estudos-concursos',1);r.onsuccess=()=>{const d=r.result,q=d.transaction('state').objectStore('state').get('personal');q.onsuccess=()=>{d.close();resolve(q.result);};};})''')
         page.goto(base);nav('Questões')
         expect(page.locator('#questions article')).to_have_count(180)
-        expect(page.locator('#frequency')).to_contain_text('180 classificadas automaticamente; 0 sem classificação preparada')
+        assert page.locator('#frequency, .frequency-row').count()==0
+        assert not page.locator('#question-filters').evaluate('(d)=>d.open')
+        assert page.locator('nav').bounding_box()['x']<page.locator('main').bounding_box()['x']
+        expect(page.locator('#question-summary')).to_contain_text('180 questões • 180 classificadas automaticamente')
         assert stored()==old
         assert page.locator('[data-edit-subjects], #thematic-edit, [name=assuntoIds]').count()==0
         layer=json.loads((ROOT/'dados/questoes/classificacao-confirmada.json').read_text())['questions']
         q=next(q for q in layer if q['id']=='IFRS-2016-1-Q01')
+        page.locator('#question-filters summary').click()
         page.locator('.filters [name=year]').select_option('2016')
         page.locator('.filters [name=semester]').select_option('1')
         page.locator('.filters [name=status]').select_option('revisar')
@@ -64,12 +68,39 @@ try:
         assert page.locator('#questions article').evaluate_all('(cards)=>cards.map(c=>c.querySelector("p b").textContent)')==expected
         assert stored()==old
         page.reload();nav('Questões');assert stored()==old
+        nav('Assuntos')
+        expect(page.locator('#frequency .frequency-row')).to_have_count(31)
+        page.locator('[name=subjectYear]').select_option('2026')
+        page.locator('[name=subjectSemester]').select_option('2')
+        expect(page.locator('#frequency')).to_contain_text('10 questões no recorte')
+        page.locator('[name=subjectSearch]').fill('Números reais')
+        expect(page.locator('#frequency .frequency-row')).to_have_count(1)
+        expect(page.locator('#frequency .frequency-row')).to_contain_text('0 de 10 (0.0%)')
+        page.locator('#frequency [data-related-subject]').first.click()
+        expect(page.locator('#questions article')).to_have_count(len(expected))
+        assert page.locator('.filters [name=year]').input_value()==''
+        assert page.locator('.filters [name=semester]').input_value()==''
+        assert not page.locator('#question-filters').evaluate('(d)=>d.open')
+        assert stored()==old
         nav('Backup e importação')
         with page.expect_download() as event:
             page.get_by_role('button',name='Exportar backup JSON',exact=True).click()
         backup=json.loads(Path(event.value.path()).read_text())
         for collection in ['questions','notes','attempts','events','attachments']:
             assert backup[collection]==old[collection]
+        nav('Assuntos')
+        first=page.locator('#frequency .frequency-row').first
+        first.locator('summary').click()
+        first.locator('[data-substatus]').select_option('estudando')
+        first.get_by_role('button',name='Atualizar situação de estudo').click()
+        page.get_by_role('status').get_by_text('Dados salvos neste navegador.').wait_for()
+        assert next(s for s in stored()['subjects'] if s['id']==a['id'])['status']=='estudando'
+        for collection in ['questions','notes','attempts','events','attachments']:
+            assert stored()[collection]==old[collection]
+        page.reload();nav('Assuntos')
+        expect(page.locator('#frequency .frequency-row').first.locator('[data-substatus]')).to_have_value('estudando')
+        page.set_viewport_size({'width':390,'height':844})
+        assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
         nav('Questões');page.set_viewport_size({'width':390,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
         assert not errors,errors

@@ -4,7 +4,7 @@ Os 180 registros usam as classificações editoriais existentes, com 287 víncul
 
 A preparação continua sendo feita no conjunto de dados editorial (`dados/questoes/classificacao-confirmada.json`), validado junto ao catálogo. Para incorporar novas questões, acrescentar seus IDs únicos no catálogo e os vínculos `assuntoIds` na camada editorial correspondente, mantendo sua cobertura completa. Essa etapa exige evidência do conteúdo e revisão editorial; não é um classificador por inferência executado no navegador.
 
-Cada assunto exibido em um cartão é um link. Ele limpa ano, semestre, concurso, disciplina e situação, aplica somente o assunto e mostra todas as questões relacionadas, incluindo a questão de origem. Uma questão com vários assuntos aparece em todas as consultas pertinentes. O painel de frequência continua respeitando os filtros selecionados; seu botão de consulta mantém o recorte atual. Os links dos cartões oferecem a consulta ao acervo inteiro.
+Cada assunto exibido em um cartão é um link. Ele limpa ano, semestre, concurso, disciplina e situação, aplica somente o assunto e mostra todas as questões relacionadas, incluindo a questão de origem. Uma questão com vários assuntos aparece em todas as consultas pertinentes. A frequência fica no módulo independente **Assuntos**, acessível no menu esquerdo. Ele apresenta os 31 assuntos com busca, filtros de ano, semestre e disciplina, quantidade e percentual. Os links de Assuntos também abrem o acervo inteiro do assunto, independentemente do recorte usado para calcular a frequência. Não há lista de frequência antes das questões. Os filtros de Questões ficam em um painel compacto e recolhível, fechado por padrão; a contagem e o indicador de filtros ativos continuam visíveis.
 
 Frequências são recalculadas a cada renderização a partir dos registros classificados carregados, sem constantes de 180 questões. IDs repetidos de assunto contam uma única vez por questão. O denominador é o total de questões selecionadas e a soma dos percentuais pode ultrapassar 100%. Questões sem classificação preparada são sinalizadas, sem formulários de classificação.
 
@@ -17,3 +17,8 @@ Os arquivos originais Excel/CSV/JSON, PDFs e PNGs não foram alterados. O servi�
 
 ## Validação
 Testes de lógica cobrem projeção sem mutação, múltiplos vínculos, deduplicação, filtros e incremento da frequência quando novas questões preparadas são incorporadas. Testes Chromium verificam links entre provas após filtros restritivos, ausência de controles temáticos, preservação integral de revisões antigas e backup, além das imagens, PDFs, módulos e caminhos sob subdiretório Pages.
+
+## Organização da interface na PR #7
+A entrada Assuntos do menu foi mantida sem duplicação e passou a concentrar a análise temática. Frequências com zero continuam visíveis. A busca reduz os assuntos exibidos, sem mudar o denominador das frequências. A situação de estudo dos assuntos oficiais permanece nas referências recolhíveis; assuntos pessoais e cadastro ficam em seção própria, preservando os registros e controles existentes.
+
+Clicar no nome ou no link de um assunto abre Questões com somente esse assunto selecionado. Ano, semestre, situação, concurso e disciplina anteriores são limpos. Os filtros podem ser reabertos para refinar a consulta.

@@ -29,3 +29,6 @@ Branch `feature/estudos-concursos-v0.4`; merge, publicação e validação em pr
 - Links por assunto consultam o acervo inteiro, limpando filtros anteriores.
 - Frequência dinâmica, múltiplos vínculos e revisões pessoais antigas preservadas em armazenamento e backup.
 - Imagens, PDFs, IDs, dados originais e demais módulos preservados. Entrega em branch/PR, sem merge automático.
+
+### Ajuste de interface na própria PR #7
+Questões abre diretamente nos cartões, com filtros compactos e recolhíveis. Assuntos concentra os 31 temas, busca, filtros, quantidades, percentuais e links para questões entre provas. Cadastro pessoal e situação de estudo preservados em seções recolhíveis. Sem nova PR, sem merge automático e sem alterações nos arquivos de dados.

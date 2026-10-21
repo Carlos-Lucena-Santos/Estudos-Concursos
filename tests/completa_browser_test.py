@@ -21,7 +21,7 @@ try:
   page.goto(base);page.get_by_role('heading',name='Início',exact=True).wait_for();assert stored()==old
   page.locator('nav').get_by_role('button',name='Questões',exact=True).click()
   expect(page.locator('#questions article')).to_have_count(180)
-  expect(page.locator('#frequency')).to_contain_text('180 classificadas automaticamente; 0 sem classificação preparada')
+  expect(page.locator('#question-summary')).to_contain_text('180 questões • 180 classificadas automaticamente')
   crops=json.loads((ROOT/'dados/questoes/recortes-completos.json').read_text())['questions']
   layer=json.loads((ROOT/'dados/questoes/classificacao-confirmada.json').read_text())['questions']
   for crop in crops:
@@ -29,19 +29,24 @@ try:
   for pdf in {q['pdf'] for q in crops}:
    response=page.request.get(base+pdf);assert response.status==200;assert response.body().startswith(b'%PDF')
   for exam in sorted({q['id'][5:11] for q in crops}):
+   page.locator('#question-filters summary').click() if not page.locator('#question-filters').evaluate('(d)=>d.open') else None
    year,semester=exam.split('-');page.locator('.filters [name=year]').select_option(year);page.locator('.filters [name=semester]').select_option(semester)
    expect(page.locator('#questions article')).to_have_count(10)
    rows=[q for q in crops if q['id'][5:11]==exam]
    for index in range(10):
     card=page.locator('#questions article').nth(index);image=card.locator('.question-image');image.scroll_into_view_if_needed();image.evaluate('(im)=>im.decode()');assert image.evaluate('(im)=>im.naturalWidth')==rows[index]['width']
     assert f'#page={rows[index]["page"]}' in card.get_by_role('link',name=f'Abrir PDF original na página {rows[index]["page"]}').get_attribute('href')
+   page.locator('nav').get_by_role('button',name='Assuntos',exact=True).click()
+   page.locator('[name=subjectYear]').select_option(year);page.locator('[name=subjectSemester]').select_option(semester)
+   expect(page.locator('.frequency-row')).to_have_count(31)
    for row in page.locator('.frequency-row').all():
-    topic=row.locator('button').get_attribute('data-frequency-subject');count=sum(q['id'][5:11]==exam and topic in q['assuntoIds'] for q in layer)
+    topic=row.locator('[data-related-subject]').first.get_attribute('data-related-subject');count=sum(q['id'][5:11]==exam and topic in q['assuntoIds'] for q in layer)
     assert f'{count} de 10 ({count*10:.1f}%)' in row.inner_text(),(exam,topic)
+   page.locator('nav').get_by_role('button',name='Questões',exact=True).click()
   # Uma revisão antiga é preservada no banco, sem alterar a consulta editorial.
   page.evaluate("""()=>new Promise(resolve=>{const r=indexedDB.open('estudos-concursos',1);r.onsuccess=()=>{const d=r.result,t=d.transaction('state','readwrite'),store=t.objectStore('state'),request=store.get('personal');request.onsuccess=()=>{const data=request.result;data.questions[0].assuntoIds=[];data.questions[0].assuntosRevisadosEm='2026-10-20T10:00:00Z';store.put(data,'personal');};t.oncomplete=()=>{d.close();resolve();};};})""")
   page.reload();page.locator('nav').get_by_role('button',name='Questões',exact=True).click()
-  expect(page.locator('#frequency')).to_contain_text('180 classificadas automaticamente; 0 sem classificação preparada')
+  expect(page.locator('#question-summary')).to_contain_text('180 questões • 180 classificadas automaticamente')
   assert stored()['notes']==old['notes'];assert stored()['questions'][0]['assuntoIds']==[]
   assert page.locator('[data-edit-subjects], #thematic-edit').count()==0
   page.set_viewport_size({'width':390,'height':844});assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
