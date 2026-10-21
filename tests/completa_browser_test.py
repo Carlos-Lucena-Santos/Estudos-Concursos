@@ -32,7 +32,7 @@ try:
    year,semester=exam.split('-');page.locator('.filters [name=year]').select_option(year);page.locator('.filters [name=semester]').select_option(semester)
    expect(page.locator('#questions article')).to_have_count(10)
    rows=[q for q in crops if q['id'][5:11]==exam]
-   for index in [0,9]:
+   for index in range(10):
     card=page.locator('#questions article').nth(index);image=card.locator('.question-image');image.scroll_into_view_if_needed();image.evaluate('(im)=>im.decode()');assert image.evaluate('(im)=>im.naturalWidth')==rows[index]['width']
     assert f'#page={rows[index]["page"]}' in card.get_by_role('link',name=f'Abrir PDF original na página {rows[index]["page"]}').get_attribute('href')
    for row in page.locator('.frequency-row').all():

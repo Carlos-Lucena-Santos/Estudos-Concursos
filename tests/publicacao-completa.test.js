@@ -40,3 +40,17 @@ test('18 PDFs e 180 imagens ligadas aos IDs, hashes e dimensões consistentes',(
 test('classificação editorial inválida ou incompleta é rejeitada',()=>{
  for(const transform of [s=>s.questions.pop(),s=>s.questions.push(s.questions[0]),s=>s.questions[0].assuntoIds=['inexistente']]){const bad=structuredClone(layer);transform(bad);assert.throws(()=>attachPublicClassification(raw,bad));}
 });
+test('frequência por ano, semestre e assunto confere com conjunto independente, inclusive duplicatas',()=>{
+ const state=structuredClone(catalog);
+ state.questions[0].assuntoIds.push(state.questions[0].assuntoIds[0]);
+ const years=['',...new Set(state.questions.map(q=>String(q.year)))];
+ const topics=['',...officialSubjects(state).map(s=>s.id)];
+ for(const year of years)for(const semester of ['', '1','2'])for(const subjectId of topics){
+  const selected=state.questions.filter(q=>(!year||String(q.year)===year)&&(!semester||String(q.semester)===semester)&&(!subjectId||new Set(q.assuntoIds).has(subjectId)));
+  for(const row of subjectFrequency(state,{year,semester,subjectId,disciplineId:'matematica'})){
+   const expected=selected.filter(q=>new Set(q.assuntoIds).has(row.id)).length;
+   assert.equal(row.total,selected.length);assert.equal(row.count,expected);
+   assert.equal(row.percentage,selected.length?100*expected/selected.length:0);
+  }
+ }
+});
