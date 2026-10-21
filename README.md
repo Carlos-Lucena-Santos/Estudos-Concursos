@@ -75,3 +75,5 @@ Cada questão conta uma única vez por assunto, mesmo que haja IDs repetidos na 
 **Base inicial: 0 questões com assuntos específicos confirmados; 180 pendentes.** Os arquivos de origem contêm classificações preliminares, não vínculos confirmados com os IDs dos 31 assuntos. Nenhuma associação foi inferida por semelhança de nomes. Grupos e temas antigos ficam como referência histórica; as classificações originais e observações permanecem intactas.
 
 Testes adicionais: `node --test tests/tematica.test.js` e `python3 tests/tematica_browser_test.py` (este inicia seu próprio servidor na porta 8014 e exige Playwright/Chromium). Consulte [detalhes da V0.4](docs/V0.4_TEMATICA.md).
+
+A seção de Matemática do edital anexado foi conferida nas páginas 102–103: os 31 assuntos cadastrados cobrem seu conteúdo como subdivisões e títulos resumidos, não como uma lista oficial numerada ou transcrição literal. Consulte a [matriz de correspondência com o edital](docs/CONFERENCIA_EDITAL_MATEMATICA.md). Isso não confirma automaticamente a classificação de nenhuma questão.
