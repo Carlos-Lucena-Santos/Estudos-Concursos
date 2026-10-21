@@ -27,3 +27,12 @@ Esse exemplo não é conteúdo oficial. Não é carregado automaticamente.
 
 ## Backups
 Exportação inclui todas as coleções. Mesclar mantém registros locais de IDs iguais e adiciona os novos; substituir troca todo o estado após confirmação. A validação precede a transação e rejeita estrutura inválida, referências inexistentes, duplicidades internas, ciclos de assuntos, datas inválidas e anexos fora do formato. Não há atualização destrutiva silenciosa. Guarde uma cópia antes de substituir.
+
+## Adaptador IFRS — V0.2
+`dados/fontes/IFRS_Matematica_Questoes_2016_2026.json` é carregado automaticamente. O JSON original e o CSV com cabeçalhos portugueses também são aceitos na importação manual. O Excel é somente conferência, não é necessário ao navegador.
+
+Mapeamento: ID → id (inalterado); Prova → exam; Ano/Semestre/Questão → year/semester/number; Grupo do edital → subjectId e originalClassification; Assunto específico → theme e subsubjectId; Assunto secundário → secondaryIds (sem inferir grupo); Página PDF → page; Arquivo PDF → source; Confiança → classification; Observações → observations. O objeto `original` conserva todos os campos da linha original. `reviewRequired` indica exatamente a marca “Revisão necessária”.
+
+`kind` de assunto: editalGroup, editalTopic ou classificationTheme. Os IDs usam texto original codificado, incluindo grupo no identificador para evitar homônimos. Os 31 tópicos são filhos dos oito grupos. Os temas da classificação também são filhos do grupo informado, sem afirmar que correspondem a um dos tópicos oficiais. Consultar um tópico sem associação explícita retorna zero questões; selecionar um grupo ou tema consulta os vínculos fornecidos. Cadernos podem pertencer a qualquer um desses assuntos.
+
+A migração não altera nem remove IDs existentes, mesmo em conflito com o catálogo. Anotações, tentativas, eventos, anexos e situação de estudo são preservados. Catálogos e dados pessoais continuam separados em suas fontes: só o JSON público é servido; o IndexedDB nunca é enviado para o repositório. A exportação inclui o estado mesclado.

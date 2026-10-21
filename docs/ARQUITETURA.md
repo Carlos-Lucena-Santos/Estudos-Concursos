@@ -3,7 +3,7 @@ Aplicação estática servida por HTTP, compatível com subdiretórios do GitHub
 
 `app/main.js` contém navegação, componentes de formulário e controladores. `app/estilos` contém o layout responsivo. `app/servicos/model.js` valida referências, importações, filtros e ordenação. `storage.js` grava uma versão consistente do estado em uma transação IndexedDB; a tela só atualiza depois da confirmação da gravação. Falhas de cota e permissões aparecem na interface.
 
-`biblioteca`, `concursos` e `dados/questoes` são espaços para referência pública revisada. O navegador começa apenas com os metadados informados do IFRS e a disciplina Matemática. Importações feitas pela interface ficam locais, inclusive catálogos; nada é enviado automaticamente ao repositório.
+`biblioteca`, `concursos` e `dados/questoes` são espaços para referência pública revisada. Na V0.2, `ifrs.js` adapta o JSON fornecido em `dados/fontes` para o modelo local. O catálogo é buscado por URL relativa ao módulo, validado e mesclado apenas por IDs ausentes. Abertura da aplicação não sobrescreve o IndexedDB; gravações normais persistem o estado mesclado. Em falha de carregamento do catálogo, os dados locais continuam utilizáveis. Importações feitas pela interface ficam locais, inclusive catálogos; nada é enviado automaticamente ao repositório.
 
 As disciplinas e assuntos são compartilhados. Assuntos apontam para vários concursos e podem ter um assunto superior. Questões apontam para assunto principal, secundários e subassunto. Cadernos pertencem ao assunto, evitando duplicação entre concursos. Tentativas pertencem à questão; cada envio acrescenta uma tentativa e um evento. Histórico é acrescentado cronologicamente. A exclusão de uma nota não apaga os eventos passados de aprendizagem.
 

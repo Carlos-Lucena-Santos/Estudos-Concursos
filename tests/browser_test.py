@@ -17,9 +17,9 @@ with sync_playwright() as p:
     page.get_by_role('button', name='Carregar demonstração opcional').click()
     page.get_by_role('status').get_by_text('Dados salvos neste navegador.').wait_for()
     nav('Questões')
-    assert page.locator('#questions article').count() == 1
+    assert page.locator('#questions article').count() == 181
     page.locator('.filters select[name=contestId]').select_option('ifrs-2027-1')
-    assert page.locator('#questions article').count() == 0
+    assert page.locator('#questions article').count() == 180
     page.locator('.filters select[name=contestId]').select_option('demo-concurso')
     assert page.locator('#questions article').count() == 1
     nav('Caderno de assuntos')
@@ -40,6 +40,7 @@ with sync_playwright() as p:
     page.get_by_role('heading', name='pessoal.txt').wait_for()
     nav('Diário de questões')
     for date, status in [('2026-10-18T10:00','estudando'),('2026-10-19T10:00','resolvida')]:
+        page.locator('#attempt [name=questionId]').select_option('demo-questao')
         page.locator('#attempt [name=date]').fill(date)
         page.locator('#attempt [name=status]').select_option(status)
         page.locator('#attempt [name=observations]').fill('Tentativa sem conferência')
