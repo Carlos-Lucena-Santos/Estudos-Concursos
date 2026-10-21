@@ -1,4 +1,8 @@
 # Evidência de validação
+
+Os resultados abaixo são registros das respectivas versões.
+
+## V0.1 — validação inicial
 Executado no ambiente de desenvolvimento com Node.js 24, Python 3.12 e Chromium real via Playwright.
 
 `npm test`: 6 testes aprovados. Cobrem filtros combinados (concurso, disciplina, ano, semestre, assunto secundário, subassunto, situação), múltiplas tentativas e situação mais recente, ordenação sem mutação, backup e duplicidades, referências inválidas/ciclos/versões e CSV com delimitadores/aspas/quebras de linha.
@@ -20,3 +24,13 @@ Não foi feita revisão temática das classificações nem consulta a provas ou 
 
 ## V0.3 — piloto de imagens
 As três suítes Chromium, o teste Python do extrator e os 14 testes Node passaram. Os dez PNGs foram também inspecionados visualmente contra o PDF. Detalhes, limites e critérios para status `ok` estão em [PILOTO_IFRS_2016_1.md](PILOTO_IFRS_2016_1.md). Não houve modificação dos arquivos originais da V0.2 nem publicação remota.
+
+## Encerramento da V0.3 — 21/10/2026
+Validação realizada pelo usuário diretamente no GitHub Pages, conforme confirmação nesta data:
+- Dez questões recortadas corretamente como PNG e vinculadas aos IDs originais.
+- Visualização no módulo Questões e ampliação funcionando.
+- PR #3 integrada à `main` e publicação concluída.
+
+A V0.3 está concluída e validada para o piloto IFRS 2016/1. Esta confirmação complementa os testes locais registrados acima; não representa nova execução das suítes de navegador nesta atualização documental. A classificação temática detalhada e as outras 17 provas não fazem parte do escopo encerrado e permanecem pendentes.
+
+Na atualização documental de encerramento, `npm test` foi executado novamente: 14 testes aprovados.
