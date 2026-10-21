@@ -1,5 +1,9 @@
-# Estudos-Concursos • V0.3 — piloto IFRS 2016/1
+# Estudos-Concursos • V0.3 concluída e validada
 Plataforma pessoal gratuita para organizar estudos, com JavaScript nativo, sem serviços externos ou backend obrigatório.
+
+**V0.3 encerrada em 21/10/2026:** o usuário confirmou a validação do piloto IFRS 2016/1 diretamente no GitHub Pages, com dez PNGs corretos, vinculados aos IDs originais, visualização e ampliação funcionando. A [PR #3](https://github.com/Carlos-Lucena-Santos/Estudos-Concursos/pull/3) foi integrada à `main` e a publicação foi concluída, conforme informado pelo usuário.
+
+Próxima etapa: planejar a V0.4. Permanecem pendentes as outras 17 provas e a classificação temática detalhada. Consulte o [histórico de versões](docs/HISTORICO_VERSOES.md) e a [preparação da V0.4](docs/PLANEJAMENTO_V0.4.md).
 
 ## Executar
 Requisitos: Python 3 para o servidor local. Node.js 20+ somente para testes.

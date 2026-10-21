@@ -1,4 +1,4 @@
-# V0.3 — piloto IFRS 2016/1
+# V0.3 — piloto IFRS 2016/1 concluído
 
 ## Resultado
 10 imagens geradas, 10 verificadas e com status `ok`, 0 `revisar`, 0 `nao_extraida`. Inspeção efetiva: os dez PNGs individuais foram abertos e comparados com as cinco páginas originais renderizadas, verificando início, fim, alternativas A–E, fórmulas e as figuras das questões 03, 05 e 08. Não houve resolução nem conferência de respostas.
@@ -35,7 +35,9 @@ Os arquivos originais em `dados/fontes/` permanecem inalterados. Continuam prese
 - `python3 tests/recortes_browser_test.py`: aprovado em Chromium. Decodificou as dez imagens, abriu/fechou as dez ampliações, confirmou os dez links PDF/páginas e acesso HTTP, viewport 390px, seleção da questão no Diário e persistência da tentativa após recarga. Execução sob subdiretório equivalente ao GitHub Pages.
 - `python3 tests/browser_test.py` e `python3 tests/ifrs_browser_test.py`: aprovados; regressão das funcionalidades anteriores e preservação de notas, tentativas, eventos, anexos e reimportação sem duplicação.
 
-Depois do merge revisado e da publicação do GitHub Pages, as dez imagens poderão ser visualizadas no site. A publicação remota não foi realizada nem validada nesta tarefa.
+**Encerramento em 21/10/2026:** o usuário confirmou que a PR #3 foi integrada à `main`, a publicação no GitHub Pages foi concluída e as dez imagens estão corretas, vinculadas aos IDs originais, visíveis no módulo Questões e com ampliação funcionando. Esta validação em produção foi realizada pelo usuário; os testes locais acima são o registro da implementação.
+
+A V0.3 está concluída e validada no escopo do piloto. A classificação temática detalhada e a expansão às outras 17 provas permanecem pendentes, conforme o [planejamento da V0.4](PLANEJAMENTO_V0.4.md).
 
 ## Limites e próximas 17 provas
 Somente o PDF de 2016/1 foi processado. Para ampliar, é necessário receber os outros PDFs autorizados, conferir se têm texto selecionável, identificar suas colunas e limites, tratar explicitamente questões com múltiplas partes/páginas e conferir cada recorte. PDFs digitalizados poderão exigir OCR para localizar marcadores; a imagem final ainda deverá preservar o original. A rotina atual é um piloto específico, não um extrator geral validado para todas as diagramações.
