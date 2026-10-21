@@ -1,0 +1,56 @@
+{
+  "pdfSha256": "0b61dd6f3d15140e0cfe8f863bc1c2a1f68f1f515fda01cb1e7dc7c235d8f2dc",
+  "reviewer": "Codex — inspeção visual dos dez PNGs e comparação com as páginas 2–6 renderizadas do PDF fornecido",
+  "questions": {
+    "IFRS-2016-1-Q01": {
+      "checked": true,
+      "imageSha256": "ece766af7724255663a22e812df0acb8543f7398fb2db60941c42b48a76d2570",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q02": {
+      "checked": true,
+      "imageSha256": "e6052c812ca13485e4f548602247ef24df27cf125e2ae7cc79ba40e2c06e04ac",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q03": {
+      "checked": true,
+      "imageSha256": "05f7afa3e8f45964e37f7874a1e51e24ee33aca9534cb7dafc8c824c22291088",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q04": {
+      "checked": true,
+      "imageSha256": "143f7f156bec234db4bc80df039d3be1a92b0c48195878f78c6ffc7235f2235f",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q05": {
+      "checked": true,
+      "imageSha256": "486aee930751c6aa7adf12650f820df140b8f2bbde413ecfa7a712187649f452",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q06": {
+      "checked": true,
+      "imageSha256": "4a1087aa821b47840132c06cc751d4b65e0a4d3b09613891c482fe7dc28e949b",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q07": {
+      "checked": true,
+      "imageSha256": "1c6763d3d4ed865f02cc27004164de56e095791832ccc3e9c068a2e82f2d1c65",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q08": {
+      "checked": true,
+      "imageSha256": "dec7a2f326aa19e9c26635dc043fd2d9f633aa40e0911d23e6286d68399a7173",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q09": {
+      "checked": true,
+      "imageSha256": "0b74a7e4349bf2ec2ec42bcf8c20ccf9a237974a81c0a5fa2ef34a14fa377a6f",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    "IFRS-2016-1-Q10": {
+      "checked": true,
+      "imageSha256": "631685c790524a94ebb05fb4fad59a5fc23497f4545524451526fcf83238d4a0",
+      "method": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    }
+  }
+}

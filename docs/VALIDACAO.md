@@ -17,3 +17,6 @@ Validação adicional em servidor com raiz /workspace: HTML, CSS, módulos e nav
 - Chromium em servidor com raiz /workspace: 180 questões carregadas pelo caminho /Estudos-Concursos/, incluindo o JSON relativo ao módulo.
 
 Não foi feita revisão temática das classificações nem consulta a provas ou respostas. Nenhum PDF é publicado. A integração preserva as classificações dos anexos, não comprova sua correção matemática. Testes usam dados privados sintéticos em contextos isolados, sem acessar o navegador pessoal do usuário.
+
+## V0.3 — piloto de imagens
+As três suítes Chromium, o teste Python do extrator e os 14 testes Node passaram. Os dez PNGs foram também inspecionados visualmente contra o PDF. Detalhes, limites e critérios para status `ok` estão em [PILOTO_IFRS_2016_1.md](PILOTO_IFRS_2016_1.md). Não houve modificação dos arquivos originais da V0.2 nem publicação remota.
