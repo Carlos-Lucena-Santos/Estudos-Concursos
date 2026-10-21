@@ -1,3 +1,5 @@
+> **Registro histórico superado:** a V0.4 foi concluída, validada e publicada após o merge da PR #7, conforme confirmação do usuário. As pendências de provas e classificação descritas neste planejamento inicial foram atendidas. Veja [encerramento](ENCERRAMENTO_V0.4.md) e [próxima versão V0.5](PLANEJAMENTO_V0.5.md).
+
 # Escopo da V0.4 e pendências futuras
 
 Escopo definido em 21/10/2026: estrutura de múltiplos assuntos e cálculo de frequência pelos 31 assuntos oficiais, com edição manual. Implementação preparada para revisão na branch `feature/estudos-concursos-v0.4`, sem merge ou publicação automática; ver [V0.4_TEMATICA.md](V0.4_TEMATICA.md). A V0.3 permanece concluída e validada pelo usuário. As outras 17 provas não são processadas nesta etapa, e a classificação temática humana não é considerada concluída.

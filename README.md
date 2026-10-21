@@ -1,9 +1,20 @@
 # Estudos-Concursos • V0.4 completa — provas, questões e frequência
 Plataforma pessoal gratuita para organizar estudos, com JavaScript nativo, sem serviços externos ou backend obrigatório.
 
-**V0.3 encerrada em 21/10/2026:** o usuário confirmou a validação do piloto IFRS 2016/1 diretamente no GitHub Pages, com dez PNGs corretos, vinculados aos IDs originais, visualização e ampliação funcionando. A [PR #3](https://github.com/Carlos-Lucena-Santos/Estudos-Concursos/pull/3) foi integrada à `main` e a publicação foi concluída, conforme informado pelo usuário.
+**V0.4 concluída, validada e publicada em 21/10/2026.** A [PR #7](https://github.com/Carlos-Lucena-Santos/Estudos-Concursos/pull/7) foi integrada à `main`, e o usuário confirmou o funcionamento do site no [GitHub Pages](https://carlos-lucena-santos.github.io/Estudos-Concursos/). Este registro de publicação e validação em produção se baseia nessa confirmação, não em uma nova execução de testes de produção.
 
-Próxima etapa: planejar a V0.4. Permanecem pendentes as outras 17 provas e a classificação temática detalhada. Consulte o [histórico de versões](docs/HISTORICO_VERSOES.md) e a [preparação da V0.4](docs/PLANEJAMENTO_V0.4.md).
+Funcionalidades concluídas:
+
+- 18 provas do IFRS incorporadas, com 18 PDFs originais e 180 questões com imagens PNG, identificação e links para a página da prova.
+- 31 assuntos do conteúdo programático e 287 vínculos temáticos, com múltiplos assuntos por questão.
+- Classificação temática automática na apresentação, a partir dos dados editoriais preparados, sem solicitar classificação ou confirmação manual ao estudante.
+- Módulos Questões e Assuntos separados no menu; filtros compactos e recolhíveis em Questões.
+- Filtros, frequências por assunto, quantidades e links entre questões do mesmo assunto, inclusive entre anos e semestres.
+- Demais módulos, IDs, arquivos originais, revisões pessoais, anotações, tentativas, histórico e anexos preservados.
+
+**Próxima versão: V0.5.** Escopo e funcionalidades ainda não definidos. Nenhuma implementação da V0.5 faz parte deste encerramento.
+
+Consulte o [histórico de versões](docs/HISTORICO_VERSOES.md), o [encerramento da V0.4](docs/ENCERRAMENTO_V0.4.md) e o [planejamento da V0.5](docs/PLANEJAMENTO_V0.5.md).
 
 ## Executar
 Requisitos: Python 3 para o servidor local. Node.js 20+ somente para testes.
@@ -24,7 +35,7 @@ Abra o endereço local mostrado pelo servidor no seu navegador. Não abra index.
 5. Registre atividades e revisões manuais no histórico.
 6. Exporte backups JSON e cadernos Markdown regularmente.
 
-A demonstração é opcional e fica em um concurso fictício separado. O IFRS Porto Alegre / Tecnologia em Sistemas para Internet / 2027/1 e o edital 15/2026 são metadados fornecidos pelo solicitante: foram incorporadas as 180 classificações e os 31 tópicos dos anexos fornecidos. Esta entrega inclui os PDFs autorizados das 18 provas e 180 imagens de questões. O PDF do edital não é publicado no repositório; sua seção de Matemática foi conferida conforme a documentação. As classificações permanecem preliminares (166) ou com revisão necessária (14), sem reclassificação.
+A demonstração é opcional e fica em um concurso fictício separado. O IFRS Porto Alegre / Tecnologia em Sistemas para Internet / 2027/1 e o edital 15/2026 são metadados fornecidos pelo solicitante: foram incorporadas as 180 classificações e os 31 tópicos dos anexos fornecidos. Esta entrega inclui os PDFs autorizados das 18 provas e 180 imagens de questões. O PDF do edital não é publicado no repositório; sua seção de Matemática foi conferida conforme a documentação. As classificações originais permanecem intactas (166 preliminares e 14 com revisão necessária); a camada editorial separada contém os 287 vínculos temáticos das 180 questões.
 
 ## Privacidade
 Os dados pessoais e anexos ficam no IndexedDB deste navegador e desta origem. Não são enviados ao GitHub nem sincronizados. Limpeza do navegador, mudança de endereço ou de dispositivo pode tornar os dados indisponíveis. Backups contêm informações privadas: guarde-os em local seguro. O armazenamento está sujeito à cota do navegador; anexos limitados a 10 MB por arquivo. PDFs só são abertos por link fornecido ou arquivo selecionado pelo usuário. Nenhuma prova é publicada automaticamente.
@@ -66,7 +77,7 @@ python3 tests/recortes_browser_test.py
 O último teste inicia seu próprio servidor na porta 8013. As suítes anteriores continuam usando o servidor na porta 8000. Veja [relatório do piloto](docs/PILOTO_IFRS_2016_1.md) para limites, revisão e expansão às demais provas.
 
 ## V0.4 — múltiplos assuntos por questão
-A implementação da V0.4 substitui o painel de oito grupos históricos por frequência dos **31 assuntos oficiais existentes**. A V0.3 continua sendo o marco publicado e validado pelo usuário; a V0.4 depende da revisão e publicação desta entrega.
+A implementação da V0.4 substitui o painel de oito grupos históricos por frequência dos **31 assuntos oficiais existentes**. A V0.4 está concluída, validada pelo usuário e publicada no GitHub Pages após o merge da PR #7.
 
 No módulo **Questões**, os assuntos são apresentados automaticamente a partir da classificação editorial preparada em `dados/questoes/classificacao-confirmada.json`. Não é necessário classificar, confirmar ou editar vínculos no navegador. Cada assunto da questão é um link: ao acioná-lo, a consulta limpa os filtros anteriores e mostra todas as questões relacionadas no acervo, independentemente de ano ou semestre. As imagens, ampliação, identificação, PDF e Diário continuam disponíveis.
 
@@ -87,7 +98,7 @@ A classificação pública revisada é uma camada separada das fontes originais.
 
 Detalhes, frequências, justificativas e limitações: [relatório da V0.4 completa](docs/V0.4_COMPLETA.md). Para reproduzir a extração: `python3 scripts/extrair_provas_ifrs.py`, com PyMuPDF/Pillow e Tesseract para a prova digitalizada de 2019/1. O navegador não precisa dessas ferramentas.
 
-Testes adicionais: `python3 -m unittest discover -s tests` e `python3 tests/completa_browser_test.py` (servidor próprio na porta 8015, Playwright/Chromium). A publicação remota depende da revisão e integração desta entrega à main; não há merge automático.
+Testes adicionais: `python3 -m unittest discover -s tests` e `python3 tests/completa_browser_test.py` (servidor próprio na porta 8015, Playwright/Chromium). A publicação da V0.4 foi concluída e validada pelo usuário após o merge da PR #7.
 
 ## Consulta temática automática
 Novas questões devem chegar com IDs únicos e `assuntoIds` preparados com os IDs dos 31 assuntos existentes; o catálogo e sua camada editorial devem cobrir as mesmas questões. A frequência é calculada a partir dos registros carregados, sem totais fixos ou inferência por nomes. Questões sem vínculos preparados são sinalizadas sem solicitar classificação ao usuário. Veja [regras atuais](docs/QUESTOES_AUTOMATICAS.md).

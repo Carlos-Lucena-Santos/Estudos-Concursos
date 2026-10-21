@@ -1,5 +1,21 @@
 # Histórico de versões
 
+## V0.4 — concluída, validada e publicada
+**V0.4 concluída, validada e publicada em 21/10/2026.** A [PR #7](https://github.com/Carlos-Lucena-Santos/Estudos-Concursos/pull/7) foi integrada à `main`, e o usuário confirmou o funcionamento do site no [GitHub Pages](https://carlos-lucena-santos.github.io/Estudos-Concursos/). Este registro de publicação e validação em produção se baseia nessa confirmação, não em uma nova execução de testes de produção.
+
+Funcionalidades concluídas:
+
+- 18 provas do IFRS incorporadas, com 18 PDFs originais e 180 questões com imagens PNG, identificação e links para a página da prova.
+- 31 assuntos do conteúdo programático e 287 vínculos temáticos, com múltiplos assuntos por questão.
+- Classificação temática automática na apresentação, a partir dos dados editoriais preparados, sem solicitar classificação ou confirmação manual ao estudante.
+- Módulos Questões e Assuntos separados no menu; filtros compactos e recolhíveis em Questões.
+- Filtros, frequências por assunto, quantidades e links entre questões do mesmo assunto, inclusive entre anos e semestres.
+- Demais módulos, IDs, arquivos originais, revisões pessoais, anotações, tentativas, histórico e anexos preservados.
+
+**Próxima versão: V0.5.** Escopo e funcionalidades ainda não definidos. Nenhuma implementação da V0.5 faz parte deste encerramento.
+
+As seções anteriores de implementação e revisão, mantidas abaixo, descrevem etapas históricas; suas pendências de merge/publicação foram superadas pelo encerramento. Limitações de transcrição/OCR continuam documentadas e não definem o escopo da V0.5.
+
 ## V0.3 — concluída e validada em 21/10/2026
 Piloto IFRS 2016/1: PDF original, extração com Python/PyMuPDF, dez PNGs vinculados aos IDs IFRS-2016-1-Q01 a Q10 e metadados de integridade. Módulo Questões com imagens, ampliação, link para a página do PDF e acesso ao Diário.
 
