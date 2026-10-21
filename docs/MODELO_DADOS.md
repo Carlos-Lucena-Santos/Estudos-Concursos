@@ -54,3 +54,6 @@ Validação rejeita vínculos para IDs inexistentes, grupos/temas históricos ou
 Ao mesclar, a camada pública completa listas antigas vazias ou ausentes sem revisão pessoal. Uma lista com `assuntosRevisadosEm`, mesmo vazia, permanece intacta; uma lista não vazia importada sem marca de origem pública também é mantida. Uma revisão pública futura só atualiza o que não foi revisado pessoalmente. Notas, histórico, tentativas e anexos não são modificados, e não há gravação automática do banco na abertura.
 
 `recortes-completos.json` associa os 180 IDs a arquivos, páginas e fragmentos, com hashes de integridade. `text` é a extração automática e `textStatus: revisar` explicita suas limitações. A página de abertura do PDF é a verificada nos recortes, inclusive para oito páginas que estavam vazias na fonte antiga, sem substituir esse dado original. `verificacao-completa.json` vincula a inspeção visual aos hashes do PDF e PNG.
+
+## Apresentação automática em Questões
+`classifiedCollection(personal, catalog)` projeta os `assuntoIds` preparados do catálogo sobre os mesmos IDs, sem alterar o estado pessoal. A consulta e frequência usam essa projeção. `assuntosObservacao` e `assuntosRevisadosEm` antigos continuam no banco e no backup; não são editados pelo módulo Questões. Novos registros classificados participam da frequência sem atualizar constantes.

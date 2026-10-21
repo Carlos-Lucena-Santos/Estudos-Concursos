@@ -68,7 +68,7 @@ O último teste inicia seu próprio servidor na porta 8013. As suítes anteriore
 ## V0.4 — múltiplos assuntos por questão
 A implementação da V0.4 substitui o painel de oito grupos históricos por frequência dos **31 assuntos oficiais existentes**. A V0.3 continua sendo o marco publicado e validado pelo usuário; a V0.4 depende da revisão e publicação desta entrega.
 
-No módulo **Questões**, clique em **Editar assuntos** na questão desejada, marque um ou vários assuntos cuja associação você confirmou, acrescente observações e use **Salvar vínculos confirmados**. A seleção vazia mantém a questão pendente. **Cancelar** ou Escape não grava alterações. Os vínculos ficam no navegador e no backup JSON; não são enviados ao GitHub. Faça backups para transferi-los entre dispositivos.
+No módulo **Questões**, os assuntos são apresentados automaticamente a partir da classificação editorial preparada em `dados/questoes/classificacao-confirmada.json`. Não é necessário classificar, confirmar ou editar vínculos no navegador. Cada assunto da questão é um link: ao acioná-lo, a consulta limpa os filtros anteriores e mostra todas as questões relacionadas no acervo, independentemente de ano ou semestre. As imagens, ampliação, identificação, PDF e Diário continuam disponíveis.
 
 Cada questão conta uma única vez por assunto, mesmo que haja IDs repetidos na entrada. O percentual usa o total de questões selecionadas pelos filtros; uma questão pode contar em vários assuntos e a soma dos percentuais pode ultrapassar 100%. O painel apresenta todos os assuntos da disciplina, incluindo zeros, e o total de pendências: zero não comprova ausência de um assunto nas questões ainda não classificadas. Use **Consultar questões deste assunto** no painel ou **Consultar questões relacionadas** em Assuntos.
 
@@ -79,12 +79,15 @@ Testes adicionais: `node --test tests/tematica.test.js` e `python3 tests/tematic
 A seção de Matemática do edital anexado foi conferida nas páginas 102–103: os 31 assuntos cadastrados cobrem seu conteúdo como subdivisões e títulos resumidos, não como uma lista oficial numerada ou transcrição literal. Consulte a [matriz de correspondência com o edital](docs/CONFERENCIA_EDITAL_MATEMATICA.md). Isso não confirma automaticamente a classificação de nenhuma questão.
 
 ## V0.4 completa — 18 provas e classificação revisada
-Os 17 novos PDFs foram organizados e extraídos, preservando o piloto de 2016/1. A entrega contém **18 PDFs, 180 imagens conferidas e 180 questões com classificação editorial revisada**, associadas aos mesmos 31 assuntos, com justificativa por questão. São 287 vínculos ao todo; não há questões sem vínculo na base pública. As revisões pessoais podem produzir contagens diferentes e continuam tendo prioridade.
+Os 17 novos PDFs foram organizados e extraídos, preservando o piloto de 2016/1. A entrega contém **18 PDFs, 180 imagens conferidas e 180 questões com classificação editorial revisada**, associadas aos mesmos 31 assuntos, com justificativa por questão. São 287 vínculos ao todo; não há questões sem vínculo na base pública. A consulta e a frequência usam os vínculos editoriais preparados. Revisões pessoais antigas continuam preservadas no banco e nos backups, sem substituir essa apresentação automática.
 
 Em **Questões**, filtre ano/semestre para ver o enunciado original como imagem, ampliá-lo, abrir a página do PDF e registrar uma tentativa. Uma questão com continuação reúne os fragmentos na mesma imagem. O texto extraído automaticamente fica sob aviso: símbolos, fórmulas e OCR podem falhar; use a imagem/PDF como referência. Não foram incluídas respostas ou soluções.
 
-A classificação pública revisada é uma camada separada das fontes originais. Ela completa as pendências antigas sem sobrescrever revisões pessoais, inclusive uma revisão intencionalmente vazia. Abertura da aplicação não grava o banco automaticamente. Faça backup antes de atualizar ou trocar de navegador.
+A classificação pública revisada é uma camada separada das fontes originais. Uma projeção de consulta aplica seus vínculos sem sobrescrever revisões pessoais, inclusive uma revisão intencionalmente vazia. Abertura da aplicação não grava o banco automaticamente. Faça backup antes de atualizar ou trocar de navegador.
 
 Detalhes, frequências, justificativas e limitações: [relatório da V0.4 completa](docs/V0.4_COMPLETA.md). Para reproduzir a extração: `python3 scripts/extrair_provas_ifrs.py`, com PyMuPDF/Pillow e Tesseract para a prova digitalizada de 2019/1. O navegador não precisa dessas ferramentas.
 
 Testes adicionais: `python3 -m unittest discover -s tests` e `python3 tests/completa_browser_test.py` (servidor próprio na porta 8015, Playwright/Chromium). A publicação remota depende da revisão e integração desta entrega à main; não há merge automático.
+
+## Consulta temática automática
+Novas questões devem chegar com IDs únicos e `assuntoIds` preparados com os IDs dos 31 assuntos existentes; o catálogo e sua camada editorial devem cobrir as mesmas questões. A frequência é calculada a partir dos registros carregados, sem totais fixos ou inferência por nomes. Questões sem vínculos preparados são sinalizadas sem solicitar classificação ao usuário. Veja [regras atuais](docs/QUESTOES_AUTOMATICAS.md).
