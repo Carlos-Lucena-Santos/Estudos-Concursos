@@ -1,4 +1,4 @@
-# Roadmap — V0.3 encerrada, V0.4 em planejamento
+# Roadmap — V0.4 em revisão
 **Situação em 21/10/2026:** V0.3 concluída, com piloto validado pelo usuário no GitHub Pages, PR #3 integrada à `main` e publicação concluída. Histórico em [HISTORICO_VERSOES.md](HISTORICO_VERSOES.md).
 
 Implementado: navegação, cadastros de concursos/disciplinas/assuntos/subassuntos, catálogo importável e filtros, caderno Markdown com edição e exclusão, anexos locais, diário com várias tentativas, histórico com filtros e revisões manuais, dashboard contextual, backup com mesclagem e substituição confirmada, exportação Markdown.
@@ -11,4 +11,4 @@ Limitações explícitas:
 - Revisões são manuais, sem algoritmo de repetição espaçada.
 - GitHub Projects/Issues podem acompanhar as tarefas, mas a aplicação não precisa de integração ou token. Criação remota depende de acesso à API.
 
-Próximo marco: definir o escopo da V0.4 conforme [PLANEJAMENTO_V0.4.md](PLANEJAMENTO_V0.4.md). Pendências futuras: receber e processar as outras 17 provas autorizadas e realizar a classificação temática detalhada, preservando os registros originais. A validação visual da V0.3 não confirma a classificação temática. Não publicar PDFs sem autorização.
+V0.4 implementada para revisão: múltiplos vínculos confirmados com os 31 assuntos e frequência específica, conforme [V0.4_TEMATICA.md](V0.4_TEMATICA.md). Nenhuma reclassificação automática foi realizada. Próximo marco: revisar e publicar esta entrega. Pendências futuras: receber e processar as outras 17 provas autorizadas e realizar a classificação temática detalhada, preservando os registros originais. A validação visual da V0.3 não confirma a classificação temática. Não publicar PDFs sem autorização.

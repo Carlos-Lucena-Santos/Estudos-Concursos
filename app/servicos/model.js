@@ -10,13 +10,24 @@ export function validate(s){
  for(const x of s.disciplines)if(typeof x.name!=='string')throw Error('Disciplina sem nome.');
  for(const x of s.subjects){if(!x.disciplineId)throw Error('Assunto sem disciplina.');if(typeof x.name!=='string')throw Error('Assunto sem nome.');ref('disciplines',x.disciplineId);ref('subjects',x.parentId);for(const id of x.contestIds||[])ref('contests',id);let p=x;const seen=new Set([x.id]);while(p.parentId){if(seen.has(p.parentId))throw Error('Ciclo nos subassuntos.');seen.add(p.parentId);p=s.subjects.find(a=>a.id===p.parentId);}}
  for(const x of s.questions){if(!x.disciplineId||!x.subjectId)throw Error('Questão sem disciplina ou assunto principal.');ref('disciplines',x.disciplineId);ref('subjects',x.subjectId);ref('subjects',x.subsubjectId);for(const id of x.secondaryIds||[])ref('subjects',id);for(const id of x.contestIds||[])ref('contests',id);if(!Number.isInteger(+x.number)||+x.number<1)throw Error('Número de questão inválido.');}
+ for(const q of s.questions){
+  if(q.assuntoIds!==undefined){
+   if(!Array.isArray(q.assuntoIds))throw Error('assuntoIds deve ser uma lista.');
+   for(const id of q.assuntoIds){
+    const subject=s.subjects.find(x=>x.id===id);
+    if(typeof id!=='string'||!subject||subject.kind!=='editalTopic'||subject.disciplineId!==q.disciplineId)throw Error('Vínculo temático exige assunto oficial da mesma disciplina.');
+   }
+  }
+  if(q.assuntosObservacao!==undefined&&typeof q.assuntosObservacao!=='string')throw Error('Observação temática inválida.');
+  if(q.assuntosRevisadosEm!==undefined&&!Number.isFinite(Date.parse(q.assuntosRevisadosEm)))throw Error('Data de revisão temática inválida.');
+ }
  for(const x of s.notes){if(!x.subjectId)throw Error('Anotação sem assunto.');ref('subjects',x.subjectId);if(typeof x.body!=='string'||typeof x.title!=='string')throw Error('Anotação inválida.');}
  for(const x of [...s.attempts,...s.events]){ref('questions',x.questionId);ref('subjects',x.subjectId);ref('disciplines',x.disciplineId);if(!Number.isFinite(Date.parse(x.date)))throw Error('Data inválida.');}
  for(const x of s.attempts){if(!x.questionId)throw Error('Tentativa sem questão.');} for(const x of s.attempts)if(!['não iniciada','estudando','resolvida','revisar'].includes(x.status))throw Error('Situação inválida.');
  for(const x of s.attachments){if(!x.subjectId)throw Error('Anexo sem assunto.');ref('subjects',x.subjectId);ref('questions',x.questionId);if(typeof x.data!=='string'||!/^data:[^,]*;base64,/.test(x.data)||x.data.length>14000000)throw Error('Anexo inválido ou maior que 10 MB.');}
  return s;
 }
-export function filteredQuestions(s,f={}){return s.questions.filter(q=>Object.entries(f).every(([k,v])=>!v||(k==='contestId'?(q.contestIds||[]).includes(v):k==='subjectId'?[q.subjectId,q.subsubjectId,...q.secondaryIds||[]].includes(v):k==='status'?(s.attempts.filter(a=>a.questionId===q.id).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))[0]?.status||'não iniciada')===v:String(q[k]??'')===v)));}
+export function filteredQuestions(s,f={}){return s.questions.filter(q=>Object.entries(f).every(([k,v])=>!v||(k==='contestId'?(q.contestIds||[]).includes(v):k==='subjectId'?(s.subjects.some(x=>x.id===v&&x.kind==='editalTopic')?(q.assuntoIds||[]).includes(v):[q.subjectId,q.subsubjectId,...q.secondaryIds||[]].includes(v)):k==='status'?(s.attempts.filter(a=>a.questionId===q.id).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))[0]?.status||'não iniciada')===v:String(q[k]??'')===v)));}
 export const chronological=items=>[...items].sort((a,b)=>Date.parse(b.date)-Date.parse(a.date));
 export function merge(a,b){validate(b);const out=structuredClone(a);for(const c of collections){const ids=new Set(out[c].map(x=>x.id));out[c].push(...b[c].filter(x=>!ids.has(x.id)));}return validate(out);}
 export function parseCSV(text){text=text.replace(/^\uFEFF/,'');const delimiter=text.split(/\r?\n/,1)[0].includes(';')?';':',';const rows=[];let row=[],cell='',quoted=false;for(let i=0;i<text.length;i++){const c=text[i];if(c==='"'){if(quoted&&text[i+1]==='"'){cell+='"';i++;}else quoted=!quoted;}else if(!quoted&&(c===delimiter||c==='\n')){row.push(cell.replace(/\r$/,''));cell='';if(c==='\n'){rows.push(row);row=[];}}else cell+=c;}if(quoted)throw Error('CSV com aspas não fechadas.');if(cell||row.length){row.push(cell.replace(/\r$/,''));rows.push(row);}const [keys,...data]=rows;return data.filter(r=>r.some(Boolean)).map(r=>Object.fromEntries(keys.map((k,i)=>[k.trim(),r[i]||''])));}

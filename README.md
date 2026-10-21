@@ -1,4 +1,4 @@
-# Estudos-Concursos • V0.3 concluída e validada
+# Estudos-Concursos • V0.4 — classificação temática e frequência
 Plataforma pessoal gratuita para organizar estudos, com JavaScript nativo, sem serviços externos ou backend obrigatório.
 
 **V0.3 encerrada em 21/10/2026:** o usuário confirmou a validação do piloto IFRS 2016/1 diretamente no GitHub Pages, com dez PNGs corretos, vinculados aos IDs originais, visualização e ampliação funcionando. A [PR #3](https://github.com/Carlos-Lucena-Santos/Estudos-Concursos/pull/3) foi integrada à `main` e a publicação foi concluída, conforme informado pelo usuário.
@@ -18,7 +18,7 @@ Abra o endereço local mostrado pelo servidor no seu navegador. Não abra index.
 
 ## Usar
 1. Cadastre concursos e disciplinas, depois assuntos e subassuntos com seus vínculos.
-2. Consulte as 180 questões IFRS já disponíveis em **Questões** e os 31 tópicos em **Assuntos**. A frequência por grupo acompanha os filtros. Novos catálogos podem ser mesclados em **Backup e importação**.
+2. Consulte as 180 questões IFRS já disponíveis em **Questões** e os 31 tópicos em **Assuntos**. A frequência dos 31 assuntos oficiais acompanha os filtros e considera somente vínculos confirmados. Novos catálogos podem ser mesclados em **Backup e importação**.
 3. Navegue pelo catálogo e seus filtros; registre tentativas no diário.
 4. Crie anotações Markdown por assunto, edite ou exclua, e guarde documentos locais no caderno.
 5. Registre atividades e revisões manuais no histórico.
@@ -64,3 +64,16 @@ python3 tests/recortes_browser_test.py
 ```
 
 O último teste inicia seu próprio servidor na porta 8013. As suítes anteriores continuam usando o servidor na porta 8000. Veja [relatório do piloto](docs/PILOTO_IFRS_2016_1.md) para limites, revisão e expansão às demais provas.
+
+## V0.4 — múltiplos assuntos por questão
+A implementação da V0.4 substitui o painel de oito grupos históricos por frequência dos **31 assuntos oficiais existentes**. A V0.3 continua sendo o marco publicado e validado pelo usuário; a V0.4 depende da revisão e publicação desta entrega.
+
+No módulo **Questões**, clique em **Editar assuntos** na questão desejada, marque um ou vários assuntos cuja associação você confirmou, acrescente observações e use **Salvar vínculos confirmados**. A seleção vazia mantém a questão pendente. **Cancelar** ou Escape não grava alterações. Os vínculos ficam no navegador e no backup JSON; não são enviados ao GitHub. Faça backups para transferi-los entre dispositivos.
+
+Cada questão conta uma única vez por assunto, mesmo que haja IDs repetidos na entrada. O percentual usa o total de questões selecionadas pelos filtros; uma questão pode contar em vários assuntos e a soma dos percentuais pode ultrapassar 100%. O painel apresenta todos os assuntos da disciplina, incluindo zeros, e o total de pendências: zero não comprova ausência de um assunto nas questões ainda não classificadas. Use **Consultar questões deste assunto** no painel ou **Consultar questões relacionadas** em Assuntos.
+
+**Base inicial: 0 questões com assuntos específicos confirmados; 180 pendentes.** Os arquivos de origem contêm classificações preliminares, não vínculos confirmados com os IDs dos 31 assuntos. Nenhuma associação foi inferida por semelhança de nomes. Grupos e temas antigos ficam como referência histórica; as classificações originais e observações permanecem intactas.
+
+Testes adicionais: `node --test tests/tematica.test.js` e `python3 tests/tematica_browser_test.py` (este inicia seu próprio servidor na porta 8014 e exige Playwright/Chromium). Consulte [detalhes da V0.4](docs/V0.4_TEMATICA.md).
+
+A seção de Matemática do edital anexado foi conferida nas páginas 102–103: os 31 assuntos cadastrados cobrem seu conteúdo como subdivisões e títulos resumidos, não como uma lista oficial numerada ou transcrição literal. Consulte a [matriz de correspondência com o edital](docs/CONFERENCIA_EDITAL_MATEMATICA.md). Isso não confirma automaticamente a classificação de nenhuma questão.

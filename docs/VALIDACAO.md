@@ -34,3 +34,15 @@ Validação realizada pelo usuário diretamente no GitHub Pages, conforme confir
 A V0.3 está concluída e validada para o piloto IFRS 2016/1. Esta confirmação complementa os testes locais registrados acima; não representa nova execução das suítes de navegador nesta atualização documental. A classificação temática detalhada e as outras 17 provas não fazem parte do escopo encerrado e permanecem pendentes.
 
 Na atualização documental de encerramento, `npm test` foi executado novamente: 14 testes aprovados.
+
+## V0.4 — vínculos oficiais e frequência temática
+`npm test`: 22 testes aprovados. Incluem os casos anteriores, o novo contrato de frequência dos 31 assuntos e oito testes temáticos de múltiplos vínculos, contagem única, percentuais, filtros, consulta, edição/remoção, validação, compatibilidade e preservação.
+
+As quatro suítes Chromium passaram: `tests/tematica_browser_test.py`, `tests/browser_test.py`, `tests/ifrs_browser_test.py` e `tests/recortes_browser_test.py`. A suíte temática usa vínculos sintéticos em contexto isolado, confirma editor com 31 opções, consultas de assuntos adicionais pelos módulos Questões/Assuntos, filtros preservados ao salvar, cancelamento, remoção, persistência, backup, reimportação e preservação do estado V0.3. Inclui viewport 390px e caminho sob subdiretório como no Pages. As demais cobrem regressões de módulos, dados e as dez imagens com ampliação/PDF.
+
+Na base pública fornecida, 0 questões têm vínculos oficiais confirmados e 180 estão pendentes. Nenhum dado sintético do teste foi salvo no repositório. A comparação com `origin/main` confirmou que fontes Excel/CSV/JSON, PDF, imagens e metadados de recortes estão inalterados. A publicação e a validação em produção da V0.4 permanecem pendentes.
+
+## Revisão da PR #5
+Os 22 testes Node, a conferência dos três anexos, o teste Python do extrator e cinco suítes Chromium passaram. Foi corrigida a rejeição da promessa de leitura IndexedDB em caso de validação inválida, com teste de regressão e preservação do estado. Na etapa inicial, a equivalência dos 31 tópicos com o edital ficou pendente de acesso ao documento primário; essa pendência foi resolvida pelo complemento abaixo. Evidências e parecer em [REVISAO_PR_5.md](REVISAO_PR_5.md).
+
+Complemento da revisão da PR #5: o edital foi posteriormente anexado e a seção de Matemática (Anexo VIII, p. 102–103) conferida por extração textual e inspeção visual. Os 31 registros têm correspondência documentada com toda a seção; seus títulos são resumos, não cópia literal. A pendência de fonte primária foi resolvida. Ver [CONFERENCIA_EDITAL_MATEMATICA.md](CONFERENCIA_EDITAL_MATEMATICA.md). Nenhum vínculo de questão foi confirmado automaticamente.
