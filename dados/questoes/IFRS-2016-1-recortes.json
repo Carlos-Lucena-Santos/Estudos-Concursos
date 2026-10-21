@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "exam": "2016/1",
+  "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+  "pdfSha256": "0b61dd6f3d15140e0cfe8f863bc1c2a1f68f1f515fda01cb1e7dc7c235d8f2dc",
+  "source": "IFRS — Processo Seletivo 2016/1 — Cursos Superiores. Reprodução para fins didáticos, conforme capa.",
+  "dpi": 288,
+  "pymupdf": "1.26.6",
+  "questions": [
+    {
+      "id": "IFRS-2016-1-Q01",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 2,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q01.png",
+      "status": "ok",
+      "bbox": [
+        45.88,
+        42.1442,
+        287.4,
+        161.3746
+      ],
+      "width": 967,
+      "height": 478,
+      "imageSha256": "ece766af7724255663a22e812df0acb8543f7398fb2db60941c42b48a76d2570",
+      "parts": [
+        {
+          "page": 2,
+          "bbox": [
+            45.88,
+            42.1442,
+            287.4,
+            161.3746
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q02",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 2,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q02.png",
+      "status": "ok",
+      "bbox": [
+        45.88,
+        166.7042,
+        287.4,
+        294.5746
+      ],
+      "width": 967,
+      "height": 513,
+      "imageSha256": "e6052c812ca13485e4f548602247ef24df27cf125e2ae7cc79ba40e2c06e04ac",
+      "parts": [
+        {
+          "page": 2,
+          "bbox": [
+            45.88,
+            166.7042,
+            287.4,
+            294.5746
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q03",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 2,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q03.png",
+      "status": "ok",
+      "bbox": [
+        45.88,
+        299.6642,
+        287.4,
+        724.6747
+      ],
+      "width": 967,
+      "height": 1701,
+      "imageSha256": "05f7afa3e8f45964e37f7874a1e51e24ee33aca9534cb7dafc8c824c22291088",
+      "parts": [
+        {
+          "page": 2,
+          "bbox": [
+            45.88,
+            299.6642,
+            287.4,
+            724.6747
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q04",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 3,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q04.png",
+      "status": "ok",
+      "bbox": [
+        76.84,
+        19.5842,
+        318.36,
+        168.0946
+      ],
+      "width": 967,
+      "height": 595,
+      "imageSha256": "143f7f156bec234db4bc80df039d3be1a92b0c48195878f78c6ffc7235f2235f",
+      "parts": [
+        {
+          "page": 3,
+          "bbox": [
+            76.84,
+            19.5842,
+            318.36,
+            168.0946
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q05",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 3,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q05.png",
+      "status": "ok",
+      "bbox": [
+        76.84,
+        183.9841,
+        318.36,
+        728.1125
+      ],
+      "width": 967,
+      "height": 2178,
+      "imageSha256": "486aee930751c6aa7adf12650f820df140b8f2bbde413ecfa7a712187649f452",
+      "parts": [
+        {
+          "page": 3,
+          "bbox": [
+            76.84,
+            183.9841,
+            318.36,
+            728.1125
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q06",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 4,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q06.png",
+      "status": "ok",
+      "bbox": [
+        45.88,
+        18.1442,
+        287.4,
+        173.3746
+      ],
+      "width": 967,
+      "height": 622,
+      "imageSha256": "4a1087aa821b47840132c06cc751d4b65e0a4d3b09613891c482fe7dc28e949b",
+      "parts": [
+        {
+          "page": 4,
+          "bbox": [
+            45.88,
+            18.1442,
+            287.4,
+            173.3746
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q07",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 4,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q07.png",
+      "status": "ok",
+      "bbox": [
+        45.88,
+        186.9354,
+        287.4,
+        579.6946
+      ],
+      "width": 967,
+      "height": 1572,
+      "imageSha256": "1c6763d3d4ed865f02cc27004164de56e095791832ccc3e9c068a2e82f2d1c65",
+      "parts": [
+        {
+          "page": 4,
+          "bbox": [
+            45.88,
+            186.9354,
+            287.4,
+            579.6946
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q08",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 5,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q08.png",
+      "status": "ok",
+      "bbox": [
+        76.84,
+        18.1442,
+        318.36,
+        363.6946
+      ],
+      "width": 967,
+      "height": 1383,
+      "imageSha256": "dec7a2f326aa19e9c26635dc043fd2d9f633aa40e0911d23e6286d68399a7173",
+      "parts": [
+        {
+          "page": 5,
+          "bbox": [
+            76.84,
+            18.1442,
+            318.36,
+            363.6946
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q09",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 5,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q09.png",
+      "status": "ok",
+      "bbox": [
+        76.84,
+        375.2641,
+        318.36,
+        712.4146
+      ],
+      "width": 967,
+      "height": 1349,
+      "imageSha256": "0b74a7e4349bf2ec2ec42bcf8c20ccf9a237974a81c0a5fa2ef34a14fa377a6f",
+      "parts": [
+        {
+          "page": 5,
+          "bbox": [
+            76.84,
+            375.2641,
+            318.36,
+            712.4146
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    },
+    {
+      "id": "IFRS-2016-1-Q10",
+      "pdf": "dados/provas/IFRS-2016-1-Superior.pdf",
+      "page": 6,
+      "image": "dados/questoes/imagens/2016-1/IFRS-2016-1-Q10.png",
+      "status": "ok",
+      "bbox": [
+        45.88,
+        23.7485,
+        287.4,
+        264.713
+      ],
+      "width": 967,
+      "height": 965,
+      "imageSha256": "631685c790524a94ebb05fb4fad59a5fc23497f4545524451526fcf83238d4a0",
+      "parts": [
+        {
+          "page": 6,
+          "bbox": [
+            45.88,
+            23.7485,
+            287.4,
+            264.713
+          ]
+        }
+      ],
+      "possibleContinuation": false,
+      "warnings": [],
+      "verification": "Comparação visual do PNG individual com a página original: início, fim, alternativas A–E, fórmulas e figuras integralmente visíveis; sem continuação em outra página ou coluna."
+    }
+  ]
+}
