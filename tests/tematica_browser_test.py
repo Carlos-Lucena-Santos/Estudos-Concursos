@@ -40,81 +40,71 @@ try:
             page.get_by_role('heading',name=label,exact=True).wait_for()
         def stored():
             return page.evaluate('''()=>new Promise(resolve=>{const r=indexedDB.open('estudos-concursos',1);r.onsuccess=()=>{const d=r.result,q=d.transaction('state').objectStore('state').get('personal');q.onsuccess=()=>{d.close();resolve(q.result);};};})''')
-        def row(topic):
-            return page.locator('.frequency-row').filter(has=page.locator(f'[data-frequency-subject="{topic["id"]}"]'))
-        def edit(qid,indices):
-            page.locator(f'[data-edit-subjects="{qid}"]').click()
-            dialog=page.get_by_role('dialog')
-            checkboxes=dialog.locator('[name=assuntoIds]')
-            assert checkboxes.count()==31
-            for i in range(31):
-                checkboxes.nth(i).set_checked(i in indices)
-            dialog.locator('[name=observation]').fill('Vínculos sintéticos do teste; não são classificação real.')
-            dialog.get_by_role('button',name='Salvar vínculos confirmados').click()
-            dialog.wait_for(state='detached')
-        page.goto(base)
-        page.get_by_role('heading',name='Início',exact=True).wait_for()
+        page.goto(base);nav('Questões')
+        expect(page.locator('#questions article')).to_have_count(180)
+        assert page.locator('#frequency, .frequency-row').count()==0
+        assert not page.locator('#question-filters').evaluate('(d)=>d.open')
+        assert page.locator('nav').bounding_box()['x']<page.locator('main').bounding_box()['x']
+        expect(page.locator('#question-summary')).to_contain_text('180 questões • 180 classificadas automaticamente')
         assert stored()==old
-        nav('Questões')
-        assert page.locator('.frequency-row').count()==31
-        assert '0 com assuntos confirmados; 180 pendentes' in page.locator('#frequency').inner_text()
+        assert page.locator('[data-edit-subjects], #thematic-edit, [name=assuntoIds]').count()==0
+        layer=json.loads((ROOT/'dados/questoes/classificacao-confirmada.json').read_text())['questions']
+        q=next(q for q in layer if q['id']=='IFRS-2016-1-Q01')
+        page.locator('#question-filters summary').click()
         page.locator('.filters [name=year]').select_option('2016')
         page.locator('.filters [name=semester]').select_option('1')
-        edit('IFRS-2016-1-Q01',[0,1])
-        expect(page.locator('#questions article')).to_have_count(10) # filtros preservados após salvar
-        assert '1 de 10 (10.0%)' in row(a).inner_text()
-        assert '1 de 10 (10.0%)' in row(b).inner_text()
-        assert '1 com assuntos confirmados; 9 pendentes' in page.locator('#frequency').inner_text()
-        edit('IFRS-2016-1-Q02',[0])
-        assert '2 de 10 (20.0%)' in row(a).inner_text()
-        page.locator('.filters [name=semester]').select_option('2')
-        assert '0 com assuntos confirmados; 10 pendentes' in page.locator('#frequency').inner_text()
-        page.locator('.filters [name=semester]').select_option('1')
-        row(b).get_by_role('button').click()
+        page.locator('.filters [name=status]').select_option('revisar')
         expect(page.locator('#questions article')).to_have_count(1)
-        assert '1 de 1 (100.0%)' in row(a).inner_text()
-        assert '1 de 1 (100.0%)' in row(b).inner_text()
+        card=page.locator('#questions article').first
+        links=card.locator('[data-related-subject]')
+        assert links.count()==len(q['assuntoIds'])
+        topic=q['assuntoIds'][-1];links.last.click()
+        expected=[r['id'] for r in layer if topic in r['assuntoIds']]
+        expect(page.locator('#questions article')).to_have_count(len(expected))
+        for key in ['year','semester','status','disciplineId','contestId']:
+            assert page.locator(f'.filters [name={key}]').input_value()==''
+        assert page.locator('.filters [name=subjectId]').input_value()==topic
+        assert len({r[5:11] for r in expected})>1
+        assert page.locator('#questions article').evaluate_all('(cards)=>cards.map(c=>c.querySelector("p b").textContent)')==expected
+        assert stored()==old
+        page.reload();nav('Questões');assert stored()==old
         nav('Assuntos')
-        page.locator(f'[data-subjectquestions="{b["id"]}"]').click()
-        expect(page.locator('#questions article')).to_have_count(1)
-        assert 'IFRS-2016-1-Q01' in page.locator('#questions').inner_text()
-        page.reload()
-        nav('Questões')
-        assert '2 com assuntos confirmados; 178 pendentes' in page.locator('#frequency').inner_text()
-        result=stored()
-        for c in ['notes','attempts','events','attachments','subjects','contests','disciplines']:
-            assert result[c]==old[c],c
-        assert len(result['questions'])==180
-        for q in result['questions']:
-            original=next(x for x in old['questions'] if x['id']==q['id'])
-            for key,value in original.items():
-                if q['id'] in ['IFRS-2016-1-Q01','IFRS-2016-1-Q02'] and key in ['assuntoIds','assuntosObservacao','assuntosRevisadosEm']:continue
-                assert q[key]==value,(q['id'],key)
+        expect(page.locator('#frequency .frequency-row')).to_have_count(31)
+        page.locator('[name=subjectYear]').select_option('2026')
+        page.locator('[name=subjectSemester]').select_option('2')
+        expect(page.locator('#frequency')).to_contain_text('10 questões no recorte')
+        page.locator('[name=subjectSearch]').fill('Números reais')
+        expect(page.locator('#frequency .frequency-row')).to_have_count(1)
+        expect(page.locator('#frequency .frequency-row')).to_contain_text('0 de 10 (0.0%)')
+        page.locator('#frequency [data-related-subject]').first.click()
+        expect(page.locator('#questions article')).to_have_count(len(expected))
+        assert page.locator('.filters [name=year]').input_value()==''
+        assert page.locator('.filters [name=semester]').input_value()==''
+        assert not page.locator('#question-filters').evaluate('(d)=>d.open')
+        assert stored()==old
         nav('Backup e importação')
         with page.expect_download() as event:
             page.get_by_role('button',name='Exportar backup JSON',exact=True).click()
         backup=json.loads(Path(event.value.path()).read_text())
-        assert len(backup['questions'][0]['assuntoIds'])==2
-        page.locator('#catalog [name=file]').set_input_files(ROOT/'dados/fontes/IFRS_Matematica_Questoes_2016_2026.json')
-        page.locator('#catalog button').click()
-        page.wait_for_function("document.querySelector('#catalog [name=file]').files.length===0")
-        assert stored()==result
-        nav('Questões')
-        # Cancelar não altera dados; remover vínculos devolve a questão à pendência.
-        page.locator('[data-edit-subjects="IFRS-2016-1-Q01"]').click()
-        page.get_by_role('dialog').get_by_role('button',name='Cancelar').click()
-        assert stored()==result
-        edit('IFRS-2016-1-Q01',[])
-        assert '1 com assuntos confirmados; 179 pendentes' in page.locator('#frequency').inner_text()
+        for collection in ['questions','notes','attempts','events','attachments']:
+            assert backup[collection]==old[collection]
+        nav('Assuntos')
+        first=page.locator('#frequency .frequency-row').first
+        first.locator('summary').click()
+        first.locator('[data-substatus]').select_option('estudando')
+        first.get_by_role('button',name='Atualizar situação de estudo').click()
+        page.get_by_role('status').get_by_text('Dados salvos neste navegador.').wait_for()
+        assert next(s for s in stored()['subjects'] if s['id']==a['id'])['status']=='estudando'
+        for collection in ['questions','notes','attempts','events','attachments']:
+            assert stored()[collection]==old[collection]
+        page.reload();nav('Assuntos')
+        expect(page.locator('#frequency .frequency-row').first.locator('[data-substatus]')).to_have_value('estudando')
         page.set_viewport_size({'width':390,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
-        page.locator('[data-edit-subjects="IFRS-2016-1-Q01"]').click()
-        assert page.get_by_role('dialog').is_visible()
+        nav('Questões');page.set_viewport_size({'width':390,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
-        page.keyboard.press('Escape')
         assert not errors,errors
         browser.close()
-    print('PASS: 31 frequências, edição múltipla, filtros e consultas por assunto adicional, cancelamento/remoção, persistência e backup, dados V0.3 preservados, mobile e subdiretório Pages.')
+    print('PASS: classificação automática, múltiplos assuntos, links entre provas sem filtros herdados, ausência de editor, preservação integral de revisões privadas e backup, mobile e Pages.')
 finally:
-    server.terminate()
-    server.wait()
+    server.terminate();server.wait()

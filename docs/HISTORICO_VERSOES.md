@@ -23,3 +23,12 @@ Branch `feature/estudos-concursos-v0.4`; merge, publicação e validação em pr
 
 ## V0.4 completa — preparada para revisão e publicação
 18 PDFs organizados e 180 imagens conferidas (170 novas e dez do piloto). Camada editorial com justificativas e vínculos para as 180 questões nos 31 assuntos existentes, preservando fontes originais e revisões pessoais. Oito referências de página antes vazias foram identificadas nos metadados dos recortes. Texto extraído é apoio não validado para fórmulas/OCR; a imagem/PDF permanece autoritativa. Ver [V0.4_COMPLETA.md](V0.4_COMPLETA.md). Branch `feature/estudos-concursos-v0.4-completa`; merge/publicação ainda não realizados nesta tarefa.
+
+## V0.4 — consulta temática automática (21/10/2026)
+- Classificações editoriais preparadas apresentadas automaticamente em Questões, sem editor ou confirmação pelo estudante.
+- Links por assunto consultam o acervo inteiro, limpando filtros anteriores.
+- Frequência dinâmica, múltiplos vínculos e revisões pessoais antigas preservadas em armazenamento e backup.
+- Imagens, PDFs, IDs, dados originais e demais módulos preservados. Entrega em branch/PR, sem merge automático.
+
+### Ajuste de interface na própria PR #7
+Questões abre diretamente nos cartões, com filtros compactos e recolhíveis. Assuntos concentra os 31 temas, busca, filtros, quantidades, percentuais e links para questões entre provas. Cadastro pessoal e situação de estudo preservados em seções recolhíveis. Sem nova PR, sem merge automático e sem alterações nos arquivos de dados.

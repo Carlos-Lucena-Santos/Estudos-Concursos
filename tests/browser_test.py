@@ -18,6 +18,7 @@ with sync_playwright() as p:
     page.get_by_role('status').get_by_text('Dados salvos neste navegador.').wait_for()
     nav('Questões')
     assert page.locator('#questions article').count() == 181
+    page.locator('#question-filters summary').click()
     page.locator('.filters select[name=contestId]').select_option('ifrs-2027-1')
     assert page.locator('#questions article').count() == 180
     page.locator('.filters select[name=contestId]').select_option('demo-concurso')

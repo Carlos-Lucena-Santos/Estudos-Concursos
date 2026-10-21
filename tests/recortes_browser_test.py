@@ -23,6 +23,7 @@ try:
         page.goto(base)
         page.get_by_role('heading',name='Início',exact=True).wait_for()
         page.locator('nav').get_by_role('button',name='Questões',exact=True).click()
+        page.locator('#question-filters summary').click()
         page.locator('.filters [name=year]').select_option('2016')
         page.locator('.filters [name=semester]').select_option('1')
         assert page.locator('#questions article').count()==10

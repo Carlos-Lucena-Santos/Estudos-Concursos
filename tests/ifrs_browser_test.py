@@ -47,6 +47,7 @@ with sync_playwright() as p:
         page.wait_for_function("document.querySelector('#catalog [name=file]').files.length === 0")
     assert backup() == result
     nav('Questões')
+    page.locator('#question-filters summary').click()
     page.locator('.filters [name=disciplineId]').select_option('matematica')
     assert page.locator('#questions article').count()==180
     page.locator('.filters [name=year]').select_option('2016')
@@ -54,9 +55,9 @@ with sync_playwright() as p:
     assert page.locator('#questions article').count()==10
     assert 'IFRS-2016-1-Q01' in page.locator('#questions').inner_text()
     assert 'Página 2' in page.locator('#questions').inner_text()
-    assert page.locator('#questions a').count()==10 # Apenas o PDF do piloto autorizado em V0.3.
+    assert page.locator('#questions .question-original a').count()==10 # Dez PDFs; links temáticos são verificados separadamente.
     nav('Assuntos')
-    page.locator('[data-subjectquestions]').filter(has_text='Consultar').first.click()
+    page.locator('#frequency [data-related-subject]').first.click()
     page.get_by_role('heading',name='Questões',exact=True).wait_for()
     nav('Caderno de assuntos')
     page.get_by_role('heading',name='Nota privada V0.1',exact=True).wait_for()
