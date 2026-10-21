@@ -1,3 +1,4 @@
+import {attachPublicClassification} from './classificacao-publica.js';
 import {initial,validate,merge} from './model.js';
 // IDs derivam do texto da fonte e não da ordem dos registros.
 const subjectId=(kind,...parts)=>`ifrs-mat-${kind}-${parts.map(encodeURIComponent).join('/')}`;
@@ -25,12 +26,24 @@ export function applyCatalog(personal,catalog){
  const next=merge(personal,catalog);
  const catalogIds=new Set(catalog.questions.map(q=>q.id));
  // Migração aditiva em memória; não substitui vínculos já revisados.
- for(const q of next.questions)if(catalogIds.has(q.id)&&q.assuntoIds===undefined)q.assuntoIds=[];
+ for(const q of next.questions){
+  if(!catalogIds.has(q.id))continue;
+  const reference=catalog.questions.find(r=>r.id===q.id);
+  const personalReview=Boolean(q.assuntosRevisadosEm)||(!q.classificacaoPublicaVersao&&q.assuntoIds?.length>0);
+  if(reference.classificacaoPublicaVersao&&!personalReview){
+   q.assuntoIds=structuredClone(reference.assuntoIds);
+   q.classificacaoPublicaVersao=reference.classificacaoPublicaVersao;
+   q.classificacaoPublicaJustificativa=reference.classificacaoPublicaJustificativa;
+  }else if(q.assuntoIds===undefined)q.assuntoIds=[];
+ }
  return next;
 }
 export {subjectFrequency} from './tematica.js';
 export async function fetchIFRSCatalog(){
  const response=await fetch(new URL('../../dados/fontes/IFRS_Matematica_Questoes_2016_2026.json',import.meta.url));
  if(!response.ok)throw Error(`Não foi possível carregar catálogo IFRS (${response.status}).`);
- return ifrsCatalog(await response.json());
+ const catalog=ifrsCatalog(await response.json());
+ const layer=await fetch(new URL('../../dados/questoes/classificacao-confirmada.json',import.meta.url));
+ if(!layer.ok)throw Error(`Não foi possível carregar classificação editorial (${layer.status}).`);
+ return attachPublicClassification(catalog,await layer.json());
 }

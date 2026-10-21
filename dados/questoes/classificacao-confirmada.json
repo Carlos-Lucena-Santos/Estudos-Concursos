@@ -1,0 +1,1733 @@
+{
+  "version": 1,
+  "revision": "IFRS-v0.4-completa-1",
+  "questions": [
+    {
+      "id": "IFRS-2016-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Uni%C3%A3o%2C%20intersec%C3%A7%C3%A3o%20e%20diferen%C3%A7a",
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/N%C3%BAmeros%20reais%3A%20opera%C3%A7%C3%B5es%2C%20propriedades%2C%20intervalos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Contagem de múltiplos em intervalo e união de condições numéricas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau",
+        "ifrs-mat-edital-Trigonometria/Fun%C3%A7%C3%B5es%20seno%20e%20cosseno"
+      ],
+      "status": "confirmada",
+      "justificativa": "Equação com seno e expressão quadrática.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Fun%C3%A7%C3%B5es%20seno%20e%20cosseno",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Coordenadas%20cartesianas%20e%20dist%C3%A2ncia%20entre%20dois%20pontos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Coordenadas do ponto na roda-gigante em função de seno/cosseno.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica",
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Soma de termos de sequência expressos com logaritmos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Raios sucessivos reduzidos à metade em construção infinita.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Retirada de bolas, probabilidade e variação percentual.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes",
+        "ifrs-mat-edital-%C3%81lgebra/Sistemas%20lineares"
+      ],
+      "status": "confirmada",
+      "justificativa": "Determinantes, inversibilidade e discussão de sistema linear.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Áreas de triângulos explicitamente em progressão geométrica.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides",
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Áreas/volumes de esfera, cilindro e tetraedro.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Circunfer%C3%AAncia%3A%20equa%C3%A7%C3%B5es%20geral%20e%20reduzida"
+      ],
+      "status": "confirmada",
+      "justificativa": "Circunferência e reta dadas por equações.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Representa%C3%A7%C3%A3o%2C%20pertin%C3%AAncia%2C%20igualdade%2C%20subconjuntos%2C%20inclus%C3%A3o",
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Uni%C3%A3o%2C%20intersec%C3%A7%C3%A3o%20e%20diferen%C3%A7a"
+      ],
+      "status": "confirmada",
+      "justificativa": "Inclusão, união e intersecção de conjuntos numéricos nas alternativas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico comparativo de trânsito com taxas e variações percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Defini%C3%A7%C3%A3o%2C%20dom%C3%ADnio%2C%20imagem%2C%20gr%C3%A1ficos%2C%20fun%C3%A7%C3%A3o%20inversa%20e%20composta",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Função quadrática e transformação/definição de g a partir de f.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica"
+      ],
+      "status": "confirmada",
+      "justificativa": "Definição do pH por logaritmo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sete números explicitamente em progressão aritmética.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Áreas de retângulo e triângulo nas figuras.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Seno de ângulo em estrutura com triângulos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Circunfer%C3%AAncia%3A%20equa%C3%A7%C3%B5es%20geral%20e%20reduzida"
+      ],
+      "status": "confirmada",
+      "justificativa": "Equações de reta/circunferência e afirmações sobre matrizes e determinante.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volume de sólido de revolução a partir de quadrados.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2016-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Contagem de trajetos e probabilidade de escolha coincidente.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Defini%C3%A7%C3%A3o%2C%20dom%C3%ADnio%2C%20imagem%2C%20gr%C3%A1ficos%2C%20fun%C3%A7%C3%A3o%20inversa%20e%20composta",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20definida%20por%20v%C3%A1rias%20senten%C3%A7as"
+      ],
+      "status": "confirmada",
+      "justificativa": "Alíquotas percentuais por faixas e gráfico de função definida por sentenças.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Pol%C3%ADgonos%20e%20c%C3%ADrculos%2C%20figuras%20inscritas%20e%20circunscritas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Figuras inscritas e comparação de áreas de quadrados, círculos e polígonos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas",
+        "ifrs-mat-edital-Geometria%20Espacial/Semelhan%C3%A7a%20de%20pir%C3%A2mides%20e%20cones"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volume de cone preenchido até fração da altura.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sorteio sem reposição de dois elementos de conjunto finito.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria"
+      ],
+      "status": "confirmada",
+      "justificativa": "Coloração de setores com restrição de adjacência.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volumes de cilindros e razão dos lados do retângulo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Construção sucessiva de comprimentos com redução por terços.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes"
+      ],
+      "status": "confirmada",
+      "justificativa": "Matriz definida por índices e determinante da inversa.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Circunfer%C3%AAncia%3A%20equa%C3%A7%C3%B5es%20geral%20e%20reduzida"
+      ],
+      "status": "confirmada",
+      "justificativa": "Posição relativa e equações de duas circunferências.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Defini%C3%A7%C3%A3o%2C%20dom%C3%ADnio%2C%20imagem%2C%20gr%C3%A1ficos%2C%20fun%C3%A7%C3%A3o%20inversa%20e%20composta",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20modular",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica"
+      ],
+      "status": "confirmada",
+      "justificativa": "Equações exponenciais/logarítmicas, condições de domínio e relação entre raiz quadrada e módulo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Leitura de gráfico e comparação percentual de tarifas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Uni%C3%A3o%2C%20intersec%C3%A7%C3%A3o%20e%20diferen%C3%A7a"
+      ],
+      "status": "confirmada",
+      "justificativa": "Pesquisa de dois jornais com intersecção dos conjuntos de leitores.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Tarifa de táxi com parcela fixa e preço por quilômetro.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial"
+      ],
+      "status": "confirmada",
+      "justificativa": "Modelo de crescimento com potência de base constante.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Fun%C3%A7%C3%B5es%20seno%20e%20cosseno"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico de função com seno explicitamente na imagem.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas",
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "PA/PG nas afirmações e áreas dos retângulos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Sistemas%20lineares"
+      ],
+      "status": "confirmada",
+      "justificativa": "Preços de três produtos a partir de três compras.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Eventos obtidos pela soma de dois dados.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Pol%C3%ADgonos%20e%20c%C3%ADrculos%2C%20figuras%20inscritas%20e%20circunscritas",
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides"
+      ],
+      "status": "confirmada",
+      "justificativa": "Circunferência inscrita e volume do cubo com água.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2017-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta"
+      ],
+      "status": "confirmada",
+      "justificativa": "Reta que passa por dois pontos dados.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial"
+      ],
+      "status": "confirmada",
+      "justificativa": "Juros compostos e comparação de modelos exponencial e afim.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volume de formas de gelo medido em recipiente cilíndrico.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Retirada simultânea de bolas e probabilidade sem reposição.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Áreas de terreno e triângulos com ângulo de 60 graus na figura.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes"
+      ],
+      "status": "confirmada",
+      "justificativa": "O PDF mostra determinante de matriz e det(2A), não função modular.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Representa%C3%A7%C3%A3o%2C%20pertin%C3%AAncia%2C%20igualdade%2C%20subconjuntos%2C%20inclus%C3%A3o",
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Uni%C3%A3o%2C%20intersec%C3%A7%C3%A3o%20e%20diferen%C3%A7a"
+      ],
+      "status": "confirmada",
+      "justificativa": "Afirmações com inclusão, união, intersecção e conjunto vazio.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Altura da bola modelada por função quadrática.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Cordas inclinadas com ângulos dados em relação ao solo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Diagonais em PA e áreas de quadrados.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Circunfer%C3%AAncia%3A%20equa%C3%A7%C3%B5es%20geral%20e%20reduzida"
+      ],
+      "status": "confirmada",
+      "justificativa": "Reta tangente a circunferência dada por equação.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico de frequências escolares e variações percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial"
+      ],
+      "status": "confirmada",
+      "justificativa": "Funções f(x)=2^x e g(x)=2^(-x) na imagem.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Área de pentágono obtida em terreno retangular.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Seleção de cinco cartas e probabilidade de inclusão de carta específica.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Probabilidades sucessivas dadas por potências de 1/2.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Alturas em PA e sequência das áreas dos triângulos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Arcos%20e%20%C3%A2ngulos",
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Ângulo em radianos e área de triângulo em circunferência.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/N%C3%BAmeros%20reais%3A%20opera%C3%A7%C3%B5es%2C%20propriedades%2C%20intervalos",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20modular"
+      ],
+      "status": "confirmada",
+      "justificativa": "Inequações, intervalo real e raiz de expressão quadrática, relacionada a módulo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Receita máxima a partir de preço e quantidade variável.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2018-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta"
+      ],
+      "status": "confirmada",
+      "justificativa": "Determinante e coeficientes de retas perpendiculares.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico de uso de smartphone com percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Uni%C3%A3o%2C%20intersec%C3%A7%C3%A3o%20e%20diferen%C3%A7a"
+      ],
+      "status": "confirmada",
+      "justificativa": "Intersecção entre conjuntos de alunos que gostam de dois esportes.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Soma infinita das áreas de quadrados com lados reduzidos à metade.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Paralelas%2C%20semelhan%C3%A7a%20e%20rela%C3%A7%C3%B5es%20m%C3%A9tricas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Área delimitada em quadrado com pontos médios e segmentos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Distância entre drone e objeto com inclinação de 45 graus.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Área remanescente em função da variável x, com produto de dimensões variáveis.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial"
+      ],
+      "status": "confirmada",
+      "justificativa": "População bacteriana dada por potência de base constante.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Retiradas sucessivas sem reposição e probabilidade de empate.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas",
+        "ifrs-mat-edital-Geometria%20Espacial/Semelhan%C3%A7a%20de%20pir%C3%A2mides%20e%20cones"
+      ],
+      "status": "confirmada",
+      "justificativa": "Transferência de volume de cilindro para cone preenchido parcialmente.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Coordenadas%20cartesianas%20e%20dist%C3%A2ncia%20entre%20dois%20pontos",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta"
+      ],
+      "status": "confirmada",
+      "justificativa": "Reta perpendicular por ponto médio de segmento de extremos dados.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico e comparação de médias de utilização da internet.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Uni%C3%A3o%2C%20intersec%C3%A7%C3%A3o%20e%20diferen%C3%A7a"
+      ],
+      "status": "confirmada",
+      "justificativa": "Pesquisa em três conjuntos com proporções e intersecções.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Distância em triângulo com ângulo de 60 graus.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Relação entre áreas no retângulo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Modelo explicitamente polinomial do segundo grau.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Defini%C3%A7%C3%A3o%2C%20dom%C3%ADnio%2C%20imagem%2C%20gr%C3%A1ficos%2C%20fun%C3%A7%C3%A3o%20inversa%20e%20composta",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica"
+      ],
+      "status": "confirmada",
+      "justificativa": "Domínio de logaritmo com base variável e argumento quadrático.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/N%C3%BAmeros%20reais%3A%20opera%C3%A7%C3%B5es%2C%20propriedades%2C%20intervalos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Fichas múltiplas de 12 em sequência de inteiros.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Escolha simultânea de três bolas e evento de cor.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides",
+        "ifrs-mat-edital-Geometria%20Espacial/Semelhan%C3%A7a%20de%20pir%C3%A2mides%20e%20cones"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volume em pirâmide parcialmente preenchida a partir de cubo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2019-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Circunfer%C3%AAncia%3A%20equa%C3%A7%C3%B5es%20geral%20e%20reduzida"
+      ],
+      "status": "confirmada",
+      "justificativa": "Equação de circunferência com centro e ponto conhecidos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico de evasão e variações percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Representa%C3%A7%C3%A3o%2C%20pertin%C3%AAncia%2C%20igualdade%2C%20subconjuntos%2C%20inclus%C3%A3o",
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Uni%C3%A3o%2C%20intersec%C3%A7%C3%A3o%20e%20diferen%C3%A7a",
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/N%C3%BAmeros%20reais%3A%20opera%C3%A7%C3%B5es%2C%20propriedades%2C%20intervalos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Afirmações sobre reais positivos e cardinalidade/operações de conjuntos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica"
+      ],
+      "status": "confirmada",
+      "justificativa": "Crescimento de investimento por taxa anual com logaritmos fornecidos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica",
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas",
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Afirmações explícitas sobre PA, PG e logaritmos dos termos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Razão de áreas em retângulo com pontos de divisão.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Altura de objeto como função de segundo grau.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas",
+        "ifrs-mat-edital-Geometria%20Espacial/Semelhan%C3%A7a%20de%20pir%C3%A2mides%20e%20cones"
+      ],
+      "status": "confirmada",
+      "justificativa": "Transferência de líquido de cilindro para cone até altura parcial.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Circunfer%C3%AAncia%3A%20equa%C3%A7%C3%B5es%20geral%20e%20reduzida"
+      ],
+      "status": "confirmada",
+      "justificativa": "Circunferências e altura de triângulo nas coordenadas do desenho.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Retirada simultânea de duas bolas distintas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2020-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Paralelas%2C%20semelhan%C3%A7a%20e%20rela%C3%A7%C3%B5es%20m%C3%A9tricas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sombra e obstrução de janela por triângulos semelhantes.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico do IPCA e comparação de variações.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial"
+      ],
+      "status": "confirmada",
+      "justificativa": "Dois volumes que crescem/decrescem por fatores constantes a cada hora.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Área de região gramada na planta de uma praça.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides"
+      ],
+      "status": "confirmada",
+      "justificativa": "Razão de volumes de prisma e pirâmide.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Probabilidade de resultados de dois dados.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta",
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Circunfer%C3%AAncia%3A%20equa%C3%A7%C3%B5es%20geral%20e%20reduzida"
+      ],
+      "status": "confirmada",
+      "justificativa": "Interseções de retas com circunferência e área de triângulo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica",
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Propriedades de PG e termos escritos como logaritmos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos",
+        "ifrs-mat-edital-Trigonometria/Fun%C3%A7%C3%B5es%20seno%20e%20cosseno"
+      ],
+      "status": "confirmada",
+      "justificativa": "Relações trigonométricas entre ângulos e segmentos na figura.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/N%C3%BAmeros%20reais%3A%20opera%C3%A7%C3%B5es%2C%20propriedades%2C%20intervalos",
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes"
+      ],
+      "status": "confirmada",
+      "justificativa": "Afirmação sobre produto de reais positivos e propriedades de matrizes.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2022-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica"
+      ],
+      "status": "confirmada",
+      "justificativa": "Igualdade de duas populações exponenciais com logaritmo fornecido.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico de preços do leite e comparações percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/N%C3%BAmeros%20reais%3A%20opera%C3%A7%C3%B5es%2C%20propriedades%2C%20intervalos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Propriedades algébricas de operações com números reais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Áreas de triângulo retângulo e quadrado, com ângulo de 30 graus.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas",
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Afirmações comparando PA e PG explicitamente dadas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Custo fixo/variável e receita por unidade, modelo afim.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es"
+      ],
+      "status": "confirmada",
+      "justificativa": "Média ponderada de preços das compras de ações.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides"
+      ],
+      "status": "confirmada",
+      "justificativa": "Área/volume de peça formada por cubinhos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta"
+      ],
+      "status": "confirmada",
+      "justificativa": "Coeficientes de retas determinadas pelos vértices de triângulo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Seleção de quatro lápis e probabilidade de incluir um deles.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial"
+      ],
+      "status": "confirmada",
+      "justificativa": "Rendimento percentual composto de aplicação anual.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico de preços de gasolina com variações percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Triângulo retângulo, áreas dos quadrados e seno de ângulo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides"
+      ],
+      "status": "confirmada",
+      "justificativa": "Área de paralelepípedo após cortes.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Comparação de eventos de dados com símbolos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20logar%C3%ADtmica"
+      ],
+      "status": "confirmada",
+      "justificativa": "Produto de função quadrática por logarítmica e seus gráficos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es"
+      ],
+      "status": "confirmada",
+      "justificativa": "Média de alturas antes e após substituição de jogador.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/N%C3%BAmeros%20reais%3A%20opera%C3%A7%C3%B5es%2C%20propriedades%2C%20intervalos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Propriedades de potências de números inteiros.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Estudo%20da%20reta"
+      ],
+      "status": "confirmada",
+      "justificativa": "Coeficiente angular de retas definidas por pontos dados.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20geom%C3%A9tricas",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sombreamento sucessivo em polígonos com áreas em escala constante.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2023-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Comparação de propostas de juros percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Dados de chuva e comparação percentual com médias.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Raízes e coeficientes de função quadrática.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Figura mostra construção triangular por filas, associada a somas de PA.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Sistemas%20lineares"
+      ],
+      "status": "confirmada",
+      "justificativa": "Relações entre distâncias de três trajetos, modeladas por sistema linear.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Razão entre área de triângulo equilátero e paralelogramo.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas",
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volumes de prismas de bases poligonais e áreas de suas bases.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Coordenadas%20cartesianas%20e%20dist%C3%A2ncia%20entre%20dois%20pontos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Equidistância e coordenadas de pontos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial"
+      ],
+      "status": "confirmada",
+      "justificativa": "Investimentos com rentabilidade percentual composta.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es"
+      ],
+      "status": "confirmada",
+      "justificativa": "Tabela de gols, moda e média aritmética.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Probabilidade de ficha branca ao adicionar outras fichas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico da cesta básica com comparações percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-%C3%81lgebra/Sistemas%20lineares"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sistema de preços e desconto percentual.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Coordenadas%20cartesianas%20e%20dist%C3%A2ncia%20entre%20dois%20pontos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Distâncias entre pontos em plano cartesiano.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Agrupamentos com sequências numéricas de passo constante.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20definida%20por%20v%C3%A1rias%20senten%C3%A7as"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico formado por trechos afins e constantes.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20exponencial"
+      ],
+      "status": "confirmada",
+      "justificativa": "Comparação de juros compostos e simples, com taxas percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volume de cilindro e taxa de vazamento em litros/minuto.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria"
+      ],
+      "status": "confirmada",
+      "justificativa": "Senhas com restrições de repetição e adjacência.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Altura de antena observada com teodolito em dois ângulos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2024-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Área e perímetro de trapézio isósceles.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráficos de resíduos e percentuais de destinação.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20definida%20por%20v%C3%A1rias%20senten%C3%A7as"
+      ],
+      "status": "confirmada",
+      "justificativa": "Valores de função explicitamente definida por partes.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Proporção áurea definida por igualdade de razões.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Sistemas%20lineares"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sistema com contagem e valor de cédulas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Reajustes percentuais consecutivos e comparação com benefícios.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos",
+        "ifrs-mat-edital-Geometria%20Plana/Paralelas%2C%20semelhan%C3%A7a%20e%20rela%C3%A7%C3%B5es%20m%C3%A9tricas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Rampa, dados trigonométricos e segmentos paralelos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Velocidade de reprodução e tempo em proporção inversa.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes"
+      ],
+      "status": "confirmada",
+      "justificativa": "Produto de matrizes para obter totais de notas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria",
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sorteio de dupla em grupo de alunos e professores.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas",
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volume/área lateral de cilindro e área do rótulo retangular.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico do café e comparações percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/N%C3%BAmeros%20reais%3A%20opera%C3%A7%C3%B5es%2C%20propriedades%2C%20intervalos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Posição em sequência periódica finita: operações com inteiros e restos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Equivalência de volumes de jarra e copos cilíndricos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Medidas com ângulo de 60 graus no triângulo da instalação.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Área de triângulo e proporcionalidade da quantidade de galinhas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Anal%C3%ADtica/Coordenadas%20cartesianas%20e%20dist%C3%A2ncia%20entre%20dois%20pontos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Deslocamentos horizontal/vertical e distâncias entre pontos cartesianos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Sistemas%20lineares"
+      ],
+      "status": "confirmada",
+      "justificativa": "Quantidades de produtos obtidas de relações lineares de preços.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Custo quadrático e receita afim de vendas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes"
+      ],
+      "status": "confirmada",
+      "justificativa": "Leitura de linhas e colunas de matriz de passageiros.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2025-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Duas jogadas independentes de roleta.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es",
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Gráfico do preço do gás e variações percentuais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Porcentagem de área preservada na planta do terreno.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Pol%C3%ADgonos%20e%20c%C3%ADrculos%2C%20figuras%20inscritas%20e%20circunscritas",
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides",
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Volume de cone e prisma com circunferência inscrita na base quadrada.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Construção em filas de comprimentos ímpares, relacionada a soma de PA.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-Trigonometria/Tri%C3%A2ngulos%3A%20tri%C3%A2ngulo%20ret%C3%A2ngulo%2C%20leis%20dos%20senos%20e%20cossenos"
+      ],
+      "status": "confirmada",
+      "justificativa": "Altura de triângulo e ângulos da figura.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau",
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%202%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Comparação de gráficos afim/quadrático e intervalo de desigualdade.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Margem de lucro e markup como percentuais de bases diferentes.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria"
+      ],
+      "status": "confirmada",
+      "justificativa": "Contagem de pódios com restrição à presença de brasileiros.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Tratamento%20da%20informa%C3%A7%C3%A3o%2C%20problemas%20e%20aplica%C3%A7%C3%B5es"
+      ],
+      "status": "confirmada",
+      "justificativa": "Média e regularidade em tabela de faturamentos semanais.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-1-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Probabilidade condicional de atraso dado o desempenho.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q01",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Progress%C3%B5es%20aritm%C3%A9ticas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sequência numérica com diferença constante.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q02",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Espacial/Poliedros%2C%20prismas%20e%20pir%C3%A2mides",
+        "ifrs-mat-edital-Geometria%20Espacial/Cilindros%2C%20cones%20e%20esferas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Equivalência entre volume de cilindro e de prisma.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q03",
+      "assuntoIds": [
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Dobras em quadrado e perímetro da figura resultante.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q04",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o",
+        "ifrs-mat-edital-%C3%81lgebra/Sistemas%20lineares"
+      ],
+      "status": "confirmada",
+      "justificativa": "Sistema de preços dos pacotes e relação percentual.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q05",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Matrizes%20e%20determinantes",
+        "ifrs-mat-edital-Geometria%20Plana/Teorema%20de%20Pit%C3%A1goras%2C%20per%C3%ADmetros%20e%20%C3%A1reas"
+      ],
+      "status": "confirmada",
+      "justificativa": "Matriz de distâncias entre vértices de retângulo e relações métricas.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q06",
+      "assuntoIds": [
+        "ifrs-mat-edital-Conjuntos%20Num%C3%A9ricos%20Fundamentais/Uni%C3%A3o%2C%20intersec%C3%A7%C3%A3o%20e%20diferen%C3%A7a"
+      ],
+      "status": "confirmada",
+      "justificativa": "Pesquisa de três cursos com intersecções de conjuntos.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q07",
+      "assuntoIds": [
+        "ifrs-mat-edital-Tratamento%20da%20informa%C3%A7%C3%A3o/Porcentagem%2C%20raz%C3%A3o%20e%20propor%C3%A7%C3%A3o"
+      ],
+      "status": "confirmada",
+      "justificativa": "Proporções entre gasolina pura e percentuais de etanol.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q08",
+      "assuntoIds": [
+        "ifrs-mat-edital-Fun%C3%A7%C3%B5es/Fun%C3%A7%C3%A3o%20polinomial%20do%201%C2%BA%20grau"
+      ],
+      "status": "confirmada",
+      "justificativa": "Depreciação explicitamente linear e gráfico.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q09",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/An%C3%A1lise%20combinat%C3%B3ria"
+      ],
+      "status": "confirmada",
+      "justificativa": "Coloração de regiões adjacentes com restrições.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    },
+    {
+      "id": "IFRS-2026-2-Q10",
+      "assuntoIds": [
+        "ifrs-mat-edital-%C3%81lgebra/Probabilidade"
+      ],
+      "status": "confirmada",
+      "justificativa": "Probabilidade total a partir de distribuição de estudantes por turno.",
+      "metodo": "Leitura do enunciado e inspeção da questão original; sem resolução ou consulta de respostas."
+    }
+  ]
+}

@@ -1,14 +1,14 @@
-# Roadmap — V0.4 em revisão
+# Roadmap — V0.4 completa preparada para revisão
 **Situação em 21/10/2026:** V0.3 concluída, com piloto validado pelo usuário no GitHub Pages, PR #3 integrada à `main` e publicação concluída. Histórico em [HISTORICO_VERSOES.md](HISTORICO_VERSOES.md).
 
 Implementado: navegação, cadastros de concursos/disciplinas/assuntos/subassuntos, catálogo importável e filtros, caderno Markdown com edição e exclusão, anexos locais, diário com várias tentativas, histórico com filtros e revisões manuais, dashboard contextual, backup com mesclagem e substituição confirmada, exportação Markdown.
 
 Limitações explícitas:
-- V0.2: as 180 classificações e 31 tópicos dos arquivos fornecidos estão incorporados. O PDF de 2016/1 e seus dez recortes estão disponíveis no piloto V0.3; os PDFs das outras 17 provas permanecem pendentes. Há 14 classificações com revisão necessária e 166 preliminares; a conferência temática humana permanece pendente.
+- V0.2: as 180 classificações e 31 tópicos dos arquivos fornecidos estão incorporados. Os 18 PDFs e 180 recortes foram incorporados na entrega V0.4 completa. As classificações originais permanecem preservadas; uma camada editorial revisada contém 287 vínculos para as 180 questões.
 - XLSX exige conversão para CSV/JSON. Não há renderização rica de Markdown, editor de fórmulas ou edição completa dos cadastros após criação; catálogos são acrescentados sem substituir IDs.
 - IndexedDB é local e sujeito à cota do navegador; anexos usam Base64, aumentando o tamanho do backup. Sem sincronização e sem cache para reabrir offline.
 - Dashboard conta assuntos vinculados diretamente ao concurso e situação da tentativa de data mais recente. Não calcula acertos ou erros.
 - Revisões são manuais, sem algoritmo de repetição espaçada.
 - GitHub Projects/Issues podem acompanhar as tarefas, mas a aplicação não precisa de integração ou token. Criação remota depende de acesso à API.
 
-V0.4 implementada para revisão: múltiplos vínculos confirmados com os 31 assuntos e frequência específica, conforme [V0.4_TEMATICA.md](V0.4_TEMATICA.md). Nenhuma reclassificação automática foi realizada. Próximo marco: revisar e publicar esta entrega. Pendências futuras: receber e processar as outras 17 provas autorizadas e realizar a classificação temática detalhada, preservando os registros originais. A validação visual da V0.3 não confirma a classificação temática. Não publicar PDFs sem autorização.
+V0.4 completa preparada para revisão: múltiplos vínculos nos 31 assuntos, frequência específica, 18 PDFs e 180 imagens conferidas. Relatório em [V0.4_COMPLETA.md](V0.4_COMPLETA.md). Próximo marco: revisar e integrar a branch, publicar pelo GitHub Pages e validar em produção. Pendências futuras: revisão da transcrição automática (especialmente fórmulas/OCR) e eventuais ajustes pedagógicos da classificação pelo editor existente. Os PDFs recebidos foram incorporados conforme autorização do usuário; nenhuma outra prova foi buscada.

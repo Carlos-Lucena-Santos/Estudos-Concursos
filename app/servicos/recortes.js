@@ -1,6 +1,6 @@
 // Metadados de apresentação ficam fora do IndexedDB: não reclassificam questões.
 export async function loadClippings(){
- const response=await fetch(new URL('../../dados/questoes/IFRS-2016-1-recortes.json',import.meta.url));
+ const response=await fetch(new URL('../../dados/questoes/recortes-completos.json',import.meta.url));
  if(!response.ok)throw Error(`Recortes indisponíveis (${response.status}).`);
  const metadata=await response.json();
  if(metadata.version!==1||!Array.isArray(metadata.questions))throw Error('Metadados de recorte inválidos.');
