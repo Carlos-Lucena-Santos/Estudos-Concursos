@@ -20,3 +20,6 @@ Aplicação estática com navegação, biblioteca compartilhada, catálogo, cade
 Estrutura `assuntoIds` com múltiplos vínculos confirmados por questão, editor manual e painel de frequência pelos 31 assuntos oficiais existentes, com consulta, percentuais, zeros e pendências. Nenhuma associação automática por nomes: a base inicial possui zero questões confirmadas e 180 pendentes. Classificações originais, dados pessoais, PDF e imagens da V0.3 preservados. Sem novos assuntos ou processamento das demais provas.
 
 Branch `feature/estudos-concursos-v0.4`; merge, publicação e validação em produção permanecem pendentes. Ver [V0.4_TEMATICA.md](V0.4_TEMATICA.md). As outras 17 provas e a revisão temática humana continuam pendências futuras.
+
+## V0.4 completa — preparada para revisão e publicação
+18 PDFs organizados e 180 imagens conferidas (170 novas e dez do piloto). Camada editorial com justificativas e vínculos para as 180 questões nos 31 assuntos existentes, preservando fontes originais e revisões pessoais. Oito referências de página antes vazias foram identificadas nos metadados dos recortes. Texto extraído é apoio não validado para fórmulas/OCR; a imagem/PDF permanece autoritativa. Ver [V0.4_COMPLETA.md](V0.4_COMPLETA.md). Branch `feature/estudos-concursos-v0.4-completa`; merge/publicação ainda não realizados nesta tarefa.

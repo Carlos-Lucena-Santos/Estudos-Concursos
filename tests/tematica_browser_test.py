@@ -1,4 +1,4 @@
-"""Classificação sintética em contexto isolado: nenhum vínculo de teste vai ao catálogo."""
+"""Revisões pessoais pendentes em contexto isolado: nenhum vínculo de teste vai ao catálogo."""
 import json
 import subprocess
 import time
@@ -24,7 +24,7 @@ try:
         old=page.evaluate('''async base=>{
           const {ifrsCatalog}=await import(base+'app/servicos/ifrs.js');
           const source=await (await fetch(base+'dados/fontes/IFRS_Matematica_Questoes_2016_2026.json')).json();
-          const old=ifrsCatalog(source);old.questions.forEach(q=>delete q.assuntoIds);
+          const old=ifrsCatalog(source);old.questions.forEach(q=>{q.assuntoIds=[];q.assuntosRevisadosEm='2026-10-20T10:00:00Z';});
           const subjectId=old.subjects[0].id;
           old.notes=[{id:'n',subjectId,title:'Caderno V0.3',body:'Nota privada preservada'}];
           old.attempts=[{id:'a',questionId:'IFRS-2016-1-Q01',date:'2026-10-20T12:00:00Z',status:'revisar'}];
@@ -88,6 +88,7 @@ try:
         for q in result['questions']:
             original=next(x for x in old['questions'] if x['id']==q['id'])
             for key,value in original.items():
+                if q['id'] in ['IFRS-2016-1-Q01','IFRS-2016-1-Q02'] and key in ['assuntoIds','assuntosObservacao','assuntosRevisadosEm']:continue
                 assert q[key]==value,(q['id'],key)
         nav('Backup e importação')
         with page.expect_download() as event:

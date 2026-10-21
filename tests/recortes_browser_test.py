@@ -4,7 +4,7 @@ import subprocess
 import time
 import urllib.request
 from pathlib import Path
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import sync_playwright, expect
 ROOT = Path(__file__).resolve().parents[1]
 server = subprocess.Popen(['python3','-m','http.server','8013','--directory',str(ROOT.parent)],stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
 try:
@@ -43,7 +43,7 @@ try:
             dialog.wait_for(state='visible')
             dialog.locator('img').evaluate('(img)=>img.decode()')
             dialog.get_by_role('button',name='Fechar imagem').click()
-            assert page.locator('dialog').count()==0
+            expect(page.locator('dialog')).to_have_count(0)
         page.set_viewport_size({'width':390,'height':844})
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
         page.locator('#questions article').first.get_by_role('button',name='Ampliar imagem').click()

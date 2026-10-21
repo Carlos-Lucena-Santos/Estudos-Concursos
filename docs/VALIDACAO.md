@@ -46,3 +46,13 @@ Na base pública fornecida, 0 questões têm vínculos oficiais confirmados e 18
 Os 22 testes Node, a conferência dos três anexos, o teste Python do extrator e cinco suítes Chromium passaram. Foi corrigida a rejeição da promessa de leitura IndexedDB em caso de validação inválida, com teste de regressão e preservação do estado. Na etapa inicial, a equivalência dos 31 tópicos com o edital ficou pendente de acesso ao documento primário; essa pendência foi resolvida pelo complemento abaixo. Evidências e parecer em [REVISAO_PR_5.md](REVISAO_PR_5.md).
 
 Complemento da revisão da PR #5: o edital foi posteriormente anexado e a seção de Matemática (Anexo VIII, p. 102–103) conferida por extração textual e inspeção visual. Os 31 registros têm correspondência documentada com toda a seção; seus títulos são resumos, não cópia literal. A pendência de fonte primária foi resolvida. Ver [CONFERENCIA_EDITAL_MATEMATICA.md](CONFERENCIA_EDITAL_MATEMATICA.md). Nenhum vínculo de questão foi confirmado automaticamente.
+
+## V0.4 completa — 18 provas
+Nesta etapa, a nova camada editorial passa a confirmar 180 questões, com 287 vínculos nos 31 assuntos, substituindo o estado público inicial de zero vínculos descrito nas etapas históricas acima.
+
+Validação executada: 27 testes Node; dois testes Python (reprodução do piloto e comparação pixel a pixel dos fragmentos das 180 imagens); seis suítes Chromium (módulos, IFRS, armazenamento, recortes, temática e catálogo completo). A suíte completa verifica as 18 provas, filtros, frequência dos 31 assuntos, carregamento de 180 PNGs/18 PDFs, persistência de revisão pessoal e ausência de gravação automática ao abrir a aplicação. A conferência JSON/CSV/XLSX também passou.
+
+Inspeção visual: 180 recortes aprovados; oito questões com múltiplos fragmentos. A transcrição automática continua marcada para revisão. Originais da V0.2 e arquivos do piloto preservados. Relatório e frequências em [V0.4_COMPLETA.md](V0.4_COMPLETA.md). Publicação no GitHub Pages depende da integração da entrega; não foi realizado merge automático.
+
+## Validação final da PR #6
+Reexecução: 28 casos Node, dois testes Python, conferência dos três arquivos-fonte e seis suítes Chromium aprovados. Teste ampliado decodifica as 180 imagens no site local e confronta os filtros combinados de ano, semestre e assunto. Duas imprecisões de texto corrigidas; dois enquadramentos temáticos amplos documentados para eventual refinamento pedagógico. Acesso à produção bloqueado por HTTP 403 do ambiente. Parecer e limites em [REVISAO_PR_6.md](REVISAO_PR_6.md). Sem merge automático.

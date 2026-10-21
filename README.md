@@ -1,4 +1,4 @@
-# Estudos-Concursos • V0.4 — classificação temática e frequência
+# Estudos-Concursos • V0.4 completa — provas, questões e frequência
 Plataforma pessoal gratuita para organizar estudos, com JavaScript nativo, sem serviços externos ou backend obrigatório.
 
 **V0.3 encerrada em 21/10/2026:** o usuário confirmou a validação do piloto IFRS 2016/1 diretamente no GitHub Pages, com dez PNGs corretos, vinculados aos IDs originais, visualização e ampliação funcionando. A [PR #3](https://github.com/Carlos-Lucena-Santos/Estudos-Concursos/pull/3) foi integrada à `main` e a publicação foi concluída, conforme informado pelo usuário.
@@ -24,7 +24,7 @@ Abra o endereço local mostrado pelo servidor no seu navegador. Não abra index.
 5. Registre atividades e revisões manuais no histórico.
 6. Exporte backups JSON e cadernos Markdown regularmente.
 
-A demonstração é opcional e fica em um concurso fictício separado. O IFRS Porto Alegre / Tecnologia em Sistemas para Internet / 2027/1 e o edital 15/2026 são metadados fornecidos pelo solicitante: foram incorporadas as 180 classificações e os 31 tópicos dos anexos fornecidos. O piloto V0.3 inclui o PDF autorizado de 2016/1; os demais PDFs e o edital não estão incluídos. As classificações permanecem preliminares (166) ou com revisão necessária (14), sem reclassificação.
+A demonstração é opcional e fica em um concurso fictício separado. O IFRS Porto Alegre / Tecnologia em Sistemas para Internet / 2027/1 e o edital 15/2026 são metadados fornecidos pelo solicitante: foram incorporadas as 180 classificações e os 31 tópicos dos anexos fornecidos. Esta entrega inclui os PDFs autorizados das 18 provas e 180 imagens de questões. O PDF do edital não é publicado no repositório; sua seção de Matemática foi conferida conforme a documentação. As classificações permanecem preliminares (166) ou com revisão necessária (14), sem reclassificação.
 
 ## Privacidade
 Os dados pessoais e anexos ficam no IndexedDB deste navegador e desta origem. Não são enviados ao GitHub nem sincronizados. Limpeza do navegador, mudança de endereço ou de dispositivo pode tornar os dados indisponíveis. Backups contêm informações privadas: guarde-os em local seguro. O armazenamento está sujeito à cota do navegador; anexos limitados a 10 MB por arquivo. PDFs só são abertos por link fornecido ou arquivo selecionado pelo usuário. Nenhuma prova é publicada automaticamente.
@@ -72,8 +72,19 @@ No módulo **Questões**, clique em **Editar assuntos** na questão desejada, ma
 
 Cada questão conta uma única vez por assunto, mesmo que haja IDs repetidos na entrada. O percentual usa o total de questões selecionadas pelos filtros; uma questão pode contar em vários assuntos e a soma dos percentuais pode ultrapassar 100%. O painel apresenta todos os assuntos da disciplina, incluindo zeros, e o total de pendências: zero não comprova ausência de um assunto nas questões ainda não classificadas. Use **Consultar questões deste assunto** no painel ou **Consultar questões relacionadas** em Assuntos.
 
-**Base inicial: 0 questões com assuntos específicos confirmados; 180 pendentes.** Os arquivos de origem contêm classificações preliminares, não vínculos confirmados com os IDs dos 31 assuntos. Nenhuma associação foi inferida por semelhança de nomes. Grupos e temas antigos ficam como referência histórica; as classificações originais e observações permanecem intactas.
+**Na etapa estrutural anterior, a base tinha 0 questões com assuntos específicos confirmados e 180 pendentes.** Os arquivos de origem contêm classificações preliminares, não vínculos confirmados com os IDs dos 31 assuntos. Nenhuma associação foi inferida por semelhança de nomes. Grupos e temas antigos ficam como referência histórica; as classificações originais e observações permanecem intactas.
 
 Testes adicionais: `node --test tests/tematica.test.js` e `python3 tests/tematica_browser_test.py` (este inicia seu próprio servidor na porta 8014 e exige Playwright/Chromium). Consulte [detalhes da V0.4](docs/V0.4_TEMATICA.md).
 
 A seção de Matemática do edital anexado foi conferida nas páginas 102–103: os 31 assuntos cadastrados cobrem seu conteúdo como subdivisões e títulos resumidos, não como uma lista oficial numerada ou transcrição literal. Consulte a [matriz de correspondência com o edital](docs/CONFERENCIA_EDITAL_MATEMATICA.md). Isso não confirma automaticamente a classificação de nenhuma questão.
+
+## V0.4 completa — 18 provas e classificação revisada
+Os 17 novos PDFs foram organizados e extraídos, preservando o piloto de 2016/1. A entrega contém **18 PDFs, 180 imagens conferidas e 180 questões com classificação editorial revisada**, associadas aos mesmos 31 assuntos, com justificativa por questão. São 287 vínculos ao todo; não há questões sem vínculo na base pública. As revisões pessoais podem produzir contagens diferentes e continuam tendo prioridade.
+
+Em **Questões**, filtre ano/semestre para ver o enunciado original como imagem, ampliá-lo, abrir a página do PDF e registrar uma tentativa. Uma questão com continuação reúne os fragmentos na mesma imagem. O texto extraído automaticamente fica sob aviso: símbolos, fórmulas e OCR podem falhar; use a imagem/PDF como referência. Não foram incluídas respostas ou soluções.
+
+A classificação pública revisada é uma camada separada das fontes originais. Ela completa as pendências antigas sem sobrescrever revisões pessoais, inclusive uma revisão intencionalmente vazia. Abertura da aplicação não grava o banco automaticamente. Faça backup antes de atualizar ou trocar de navegador.
+
+Detalhes, frequências, justificativas e limitações: [relatório da V0.4 completa](docs/V0.4_COMPLETA.md). Para reproduzir a extração: `python3 scripts/extrair_provas_ifrs.py`, com PyMuPDF/Pillow e Tesseract para a prova digitalizada de 2019/1. O navegador não precisa dessas ferramentas.
+
+Testes adicionais: `python3 -m unittest discover -s tests` e `python3 tests/completa_browser_test.py` (servidor próprio na porta 8015, Playwright/Chromium). A publicação remota depende da revisão e integração desta entrega à main; não há merge automático.
